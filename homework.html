@@ -35,20 +35,19 @@
             <h3>The Fortune Teller</h3>
             <p><em>Why pay a fortune teller when you can just program your fortune yourself?</em></p>
             <ul>
-                <li>Store the following into variables: number of children, partner's name, geographic location, job title.</li>
-                <li>Output your fortune to the screen like so: "You will be a X in Y, and married to Z with N kids."</li>
+                <li>Store the following into variables: city or place, job title, home, and hobby.</li>
+                <li>Output your fortune to the screen like so: "You will be a <u>_job_</u> living in a <u>_home_</u> in <u>_city or place_</u>. For fun you will <u>_hobby_</u>."</li>
             </ul>
            
             <button onclick="showSolution(1)">Show/Hide Solution</button>
             <div class="codebox" id="example1Code">
                 <pre><code>
-var numKids  = 5;
-var partner  = 'David Beckham';
-var location = 'Costa Rica';
 var jobTitle = 'web developer';
+var home = 'sprawling beachfront treehouse';
+var place = 'Costa Rica';
+var hobby = 'play Scrabble';
 
-var future = 'You will be a ' + jobTitle + ' in ' + location + ', and married to ' +
-   partner + ' ' + ' with ' + numKids + ' kids.';
+var future = 'You will be a ' + jobTitle + ' living in a ' + home + ' in ' + place + '. For fun you will ' + hobby + '.'
 console.log(future);
                 </code></pre>
             </div>
