@@ -38,8 +38,8 @@ submitButton.onclick = function(event) {
 }
 
 function catLadyCheck(numberOfCats) {
-    if (numberOfCats == 1) {
-        document.write('you are not cat lady');
-    }
+        if (numberOfCats == 1) {
+            document.write('you are not cat lady');
+        }
 }
 

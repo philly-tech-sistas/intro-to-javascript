@@ -1,197 +1,197 @@
-/*I can wrap long comments 
-with multiple lines 
-like this*/
-// alert('welcome to cat\'s page');
+/* here
+is
+my
+multiline 
+comment */
+// alert('hi');
 
-//Or mark short comments like this
-// more comments!
-// now i have to add different ways to print text to the page.
-console.log('i am in the console');
+// write a message on the page:
+document.write('Hello World!');
 
-// here is a document.write() message
-document.write('here is a document.write message');
+// make the console say something:
+console.log('hello i am the console!');
 
-// initialize the variables!!
-var numberOfKittensIWishIHad = 4;
-var numberOfKittensMyFriendHas = 10;
-var soManyKittens = numberOfKittensMyFriendHas + numberOfKittensIWishIHad;
-var myFriendsDogs = 2;
-var myFriendsAnimals = myFriendsDogs + numberOfKittensMyFriendHas;
+// initialize the variable!
+var numberOfKittens = 5;
+var numberOfPuppies = 0;
+var numberOfAnimals = numberOfKittens + numberOfPuppies;
 
-var kittensIStole = 2;
-var numberOfKittensMyFriendHas = numberOfKittensMyFriendHas - kittensIStole;
+document.write("<br>I have this many animals total: ");
+document.write(numberOfAnimals);
 
-var cutenessRating = 9.6;
-var cutenessScale100 = cutenessRating * 10;
+document.write('<br><h2>animals have mated and now i have this many:</h2> ');
+document.write(numberOfAnimals*3);
 
-// print the variable to the page in an alert
-console.log(soManyKittens);
-console.log('after I stole some kittens:');
-console.log(numberOfKittensMyFriendHas);
-console.log('cuteness rating on a scale of 1-100:');
-console.log(cutenessScale100);
+console.log('i have this many puppies: ');
+console.log(numberOfAnimals - numberOfKittens);
 
+console.log('do i have an odd or even number of kittens??');
+console.log(numberOfKittens%2);
 
-function callKitten (kittenName) {
-    document.write('Come here, ' + kittenName + '!<br>');
-}
-callKitten ('Fluffy'); //outputs 'Come here, Fluffy!'
-callKitten ('spartacus'); //outputs 'Come here, spartacus!'
-callKitten ('kittyCAt'); //outputs 'Come here, kittyCAt!'
-callKitten ('Willa'); //outputs 'Come here, Willa!'
-
-    
-function addNumbers(x, y) {
-    console.log(x + y);
-}
-addNumbers(5,7); //outputs 12
-addNumbers(9,12); //outputs 21
-
-function addPets(puppies, kittens) {
-    console.log('I have this many puppies and kittens:');
-    console.log(puppies + kittens);
-}
-addPets(10,10); // outputs 20
-
-addPets(numberOfKittensMyFriendHas, myFriendsDogs); // outputs 25
+var myFirstName = 'Catherine ';
+var myMiddleName = 'Elizabeth ';
+var myLastName = 'Farman';
 
 
-function printRoyalName(name1, name2, name3) {
-    // add the names together - concatenate!
-    var fullName = name1 + ' ' + name2 + ' ' + name3;
+// i want to change my name
+myFirstName = 'Cat ';
+var myFullName = myFirstName + myMiddleName + myLastName;
 
-    // add a silly honorific to the end of my name
-    fullName += ' the First';
+document.write('<h3>Now you know my full name is ' + myFullName + '</h3>');
 
-    // save royal name so we can reuse it in different ways
-    return fullName;
-}
+// function printName() {
+//     document.write('<p>' + myFullName + '</p>');
+// }
+// printName();
 
-var myRoyalName = printRoyalName('Catherine', 'Elizabeth', 'Farman');
+// function printAnyName(name1, name2) {
+//     // document.write(name1 + ' ' + name2);
+//     return name1 + ', ' + name2;
+// }
 
-var catsRoyalName = printRoyalName('Willa', 'the', 'Beast'); 
+// var newName = printAnyName('Mr.', 'Kittenz');
 
-// print my cat's name
-document.write(catsRoyalName);
+// console.log(newName);
+// document.write('<h1>Hello, ' + newName + '!</h1>');
+// document.write('<br>this webpage now belongs to ' + newName);
 
-//print my name
+// // use this name output in a link:
+// document.write('<p><a href="https://pbs.twimg.com/profile_images/562466745340817408/_nIu8KHX.jpeg">meet ' + newName + '\'s kitten.</a></p>');
 
-console.log(myRoyalName);
-
-
-// global scope
-var group = 'gdi';
-
-function whatsAwesome() {
-    var group = 'new group';
-    group = 'girl develop it south new jersey';
-    console.log(group + ' is awesome');
-}
-
-console.log(group); // prints 'gdi'
-
-whatsAwesome(); // prints girl develop it south new jersey is awesome
-
-console.log(group); // prints 'girl develop it south new jersey';
-
-// these things are 'falsy'
-var myName = null;
-myName = "";
-myName = 0;
-var newName; // undefined value
-
-// truthy
-myName = 'new name value';
+// alert('HELLO TO YOU, ' + newName + '!!! Welcome to your page.');
 
 
-var temperature = 57;
+// var loanResult = 0;
 
-if (temperature < 50) {
-    document.write('Put on a jacket!');
-} else {
-    document.write('you don\'t need a jacket');
-}
+// function loanPrice() {
+//     var loanResult = 100000 - 20000;
+//     return loanResult;
+// }
 
-var kittensarecute = true;
+// loanPrice();
 
-if (!kittensarecute) {
-    document.write('what happened to those kittens that made them ugly');
-}
+// console.log('Loan result: ' + loanResult); // undefined
 
-temperature = 12;
-var youhaveacoat = true;
 
+
+
+
+
+var temperature = 27;
+var youAreAlwaysCold = true;
+var youHaveAHat = false;
+
+// less than 0 OR greater than 100!
 if (temperature < 0 || temperature > 100) {
-    console.log('stay inside');
-} else if (temperature < 30 && youhaveacoat) {
-    console.log('if you\'re going outside put on a coat and a hat');
-} else if (temperature < 30 && !youhaveacoat) {
-    console.log('chilly out there for ya');
-} else if (temperature < 50) {
-    console.log('put on a coat');
+    document.write('do not go outside.');
+} else if (temperature < 30 && youHaveAHat) {
+    document.write('wear a hat and coat');
+} else if (temperature < 30 && !youHaveAHat) {
+    document.write('buy a hat to go with your coat');
+} else if (temperature < 50 || youAreAlwaysCold) {
+    document.write('<h2>Put on a coat!!!</h2>');
 } else {
-    console.log('not too bad temperature, wear whatever you want');
+    document.write('wear whatever you want');
 }
 
-/*
-Store the following into variables: city or place, job title, home, and hobby.
-Output your fortune to the screen like so: "You will be a _job_ living in a _home_ in _city or place_. For fun you will _hobby_."
-*/
 
-// make a variable for each fortune thingy
-var city = 'Paris';
-var job = 'bookseller';
-var home = 'basement apartment';
-var hobby = 'collect stamps';
+function areaOfCircle(radius) {
+    var result;
+    result = 3.1415926 * (radius*radius);
+    console.log('The area for a circle with radius ' + radius + ' is ' + result);
+    return result;
+}
 
-document.write("<h1>You will be a " + job + " living in a " + home + " in " + city + ". For fun you will " + hobby + ".</h1>");
+areaOfCircle(2);
 
 
 
-// find all the multiplications 
+//This function uses the slice() method. It extracts a part of a string and returns a new string
+function mixUp(string1, string2) {
+  return string1.slice(1, 2) 
+        + string2.slice(2) 
+        + " " 
+        + string2.slice(1, 2) 
+        + string1.slice(2);
+}
 
-// 9 x 1 = 9 to 9 x 12 = 108
+// mid pox
+console.log(mixUp('mix', 'pod')); 
+console.log(mixUp('cat', 'farman')); 
+
+
+
+// will count 1 to 10
+for (var b = 99; b > 0; b--) {
+    if (b === 50) {
+        console.log('have you had enough beer yet???');
+    } else if (b === 1) {
+        console.log('this is last bottle!')
+    }
+    else {
+        console.log (b + ' bottles of beer');         
+    }
+}
+
+
+// this loop gets all the multiples of 9 from 1-12
 for (var i = 1; i <= 12; i++) {
+    // multiply i times 9
     var result = i*9;
-    console.log(9 + ' x ' + i + ' = ' + result);
+
+    console.log("9 times " + i + " equals " + result);
 }
 
-//outer loop counts from 1 to 12
-for (var i = 1; i <= 12; i++) {
-    // inner loop counts from 1 to 12
-    for (var n = 1; n <= 12; n++) {
-        var result = i*n;
-        console.log(i + ' x ' + n + ' = ' + result);
+// this loop gets multiples of 1-12 times 1-12
+for (var a = 1; a <= 12; a++) {
+    console.log('a is ' + a);
+    // another loop so we can multiply a*b
+    for (var b = 1; b <= 12; b++) {
+        console.log('b is ' + b);
+        console.log(a + ' times ' + b + ' equals ' + a*b);
     }
 }
 
 
-var myFavoriteFoods = ['chocolate chip pancakes','tacos','avocado','muesli'];
+var myFavoriteFoods = ['chocolate chip pancakes','coffee','avocados','tacos','beer','stuffing'];
 
-// iterate the array!!
+document.write('<h1>my most fave food is ' + myFavoriteFoods[0] + ' </h1>');
+
+document.write('<h2>my second most fave food is ' + myFavoriteFoods[1] + ' </h2>');
+
+document.write('<h3>my third most fave food is ' + myFavoriteFoods[2] + ' </h3>');
+
+
 for (var i = 0; i < myFavoriteFoods.length; i++) {
-    
-    if (i == 0) {
-        document.write('<br> my most favorite food is ' + myFavoriteFoods[i]);
-    } else {
-        document.write('<br> another good food is ' + myFavoriteFoods[i]);
-    }
-}
+    document.write('<br>my favorite food number ' + i + ' is ' + myFavoriteFoods[i]);
+} 
 
-var myRecipe = {
-    recipeTitle: 'chocolate chip pancakes',
+
+var pancakeRecipe = {
+    recipeTitle: 'vegan chocolate chip pancakes',
     servings: 4,
-    ingredients: ['flour','oil','milk','baking powder','vanilla extract','water','maple syrup','chocolate chips']
+    ingredients: ['flour','baking powder','salt','chocolate chips','water','oil','vanilla extract','maple syrup']
 }
 
-document.write('<h1>My recipe: how to make ' + myRecipe.recipeTitle + '</h1>');
+function printRecipe(recipe) {
+    document.write('<h1>My recipe is for ' + recipe.recipeTitle + ' and it serves ' + recipe.servings + ' people.');
+    document.write('<ul>');
 
-var myIngredients = myRecipe.ingredients;
-
-for (var i = 0; i < myIngredients.length; i++) {
-    if (i == myIngredients.length - 1) {
-        document.write(myIngredients[i] + '.');
-    } else {
-        document.write(myIngredients[i] + ', '); 
+    // Next, use a for loop to print the ingredients
+    for (var i = 0; i < recipe.ingredients.length; i++) {
+        document.write('<li>' + recipe.ingredients[i] + '</li>');
     }
+    
+    document.write('</ul>');
 }
+
+printRecipe(pancakeRecipe);
+
+// try writing another recipe and calling your function with that.
+
+var newRecipe = {
+    recipeTitle: 'chocolate chip cookies',
+    servings: 6,
+    ingredients: ['chocolate chips', 'flour', 'oil', 'brown sugar', 'white sugar','vanilla extract', 'salt', 'baking soda']
+}
+printRecipe(newRecipe);

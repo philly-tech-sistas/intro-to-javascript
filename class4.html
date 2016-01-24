@@ -181,7 +181,7 @@ for (var i = 0, length = radios.length; i &lt; length; i++) {
                 <p>If you are going to retrieve form values with the submit button, be sure to prevent the default action!</p>
                 <pre><code>
 var submitButton = document.getElementById('tempSubmitButton');
-submitButton.onclick = function () {
+submitButton.onclick = function (event) {
     event.preventDefault();
     var temperature = document.getElementById('temp').value;
     console.log (temperature);
