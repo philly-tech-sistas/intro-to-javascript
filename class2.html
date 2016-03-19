@@ -268,6 +268,63 @@ if (bananas &gt;=2 &amp;&amp; bananas &lt;7) {
                 <p>Add a logical operator to your what to wear program.</p> 
 			</section>
 
+
+              <section>
+                <h3>Arrays</h3>
+                <p>Arrays are ordered lists of values.</p>
+                <pre><code>
+var arrayName = [element0, element1, ...];
+        </code></pre>
+                <p>You can put different types of data into an array.</p>
+                <pre><code>
+var rainbowColors = ['Red', 'Orange', 'Yellow', 'Green', 
+'Blue', 'Indigo', 'Violet'];
+var lotteryNumbers = [33, 72, 64, 18, 17, 85];
+var myFavoriteThings = ['Broccoli', 1024, 'Sherlock'];
+        </code></pre>
+            </section>
+            <section>
+                <h3>Array Length</h3>
+                <p>The length property tells you how many things are in an array</p>
+                <pre><code>
+var rainbowColors = ['Red', 'Orange', 'Yellow', 'Green', 
+'Blue', 'Indigo', 'Violet'];
+console.log(rainbowColors.length);
+        </code></pre>                
+            </section>
+            <section>
+                <h3>Using Arrays</h3>
+                <p>You can access items with "bracket notation" by using the position of the object you want. Programmers start counting at zero.</p>
+                <pre><code>
+var rainbowColors = ['Red', 'Orange', 'Yellow', 'Green', 
+'Blue', 'Indigo', 'Violet'];
+var firstColor = rainbowColors[0];
+var lastColor = rainbowColors[6];
+        </code></pre>                
+            </section>
+            <section>
+                <h3>Changing arrays</h3>
+                <p>You can use bracket notation to change an item in an array</p>
+                <pre><code>
+var myFavoriteThings = ['Broccoli', 1024, 'Sherlock'];
+myFavoriteThings[0] = 'Asparagus';            
+                </code></pre>
+            </section>
+            <section>
+                <h3>Expanding arrays</h3>
+                <p>Arrays do not have a fixed length. You can use "push" to add something to an array.</p>
+                <pre><code>
+var myFavoriteThings = ['Broccoli', 1024, 'Sherlock'];
+myFavoriteThings.push('Dancing');              
+                </code></pre>
+            </section>
+            <section>
+        <h3>Let's Develop It</h3>
+                <p>Create an array of your favorite foods. Echo a few values onto your screen.</p> 
+      </section>
+
+
+
             <section>
                 <h3>While loops</h3>
                 <p>While will repeat the same code over and over until some condition is met.</p>
@@ -293,6 +350,22 @@ for (var i = 1; i &lt;= 10; i++) {
 }
 				</code></pre>
             </section>
+
+            <section>
+                <h3>Iterating through arrays</h3>
+                <p>Use a for loop to easily process each item in an array.</p>
+                <pre><code>
+var rainbowColors = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo', 'Violet'];
+for (var i = 0; i &lt; rainbowColors.length; i++) {
+  console.log(rainbowColors[i]);
+}              
+                </code></pre>
+            </section>
+            <section>
+				<h3>Let's Develop It</h3>
+                <p>Use a loop to make a list of all your favorite foods.</p> 
+			</section>            
+
             <section>
                 <h3>Loops and logic</h3>
                 <p>You can add other statements or logical operators inside the loops.</p>
@@ -309,7 +382,7 @@ for (var i = 1; i &lt;= 50; i++) {
         console.log (' Bang');
     }
 }
-				</code></pre>
+        </code></pre>
             </section>
             <section>
                 <h3>Break</h3>
@@ -324,82 +397,27 @@ for (var i = 100; i &lt;= 200; i++) {
         break;
     }
 }
-				</code></pre>
+        </code></pre>
             </section>
+
+      <section>
+                <h3>Group exercise: Fizz Buzz</h3>
+                <p>Write a program that prints the numbers from 1 to 100. </p>
+                <p>But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. 
+                <p>For numbers which are multiples of both three and five print “FizzBuzz”.</p>
+                <pre><code>
+//Count from 1 to 100
+for (var i = 1; i &lt;= 100; i++) {
+
+}
+        </code></pre>
+            </section>
+                  
             <section>
-				<h3>Let's Develop It</h3>
+        <h3>Let's Develop It</h3>
                 <p>Write a loop that gives you the 9's times table,<br /> from 9 x 1 = 9 to 9 x 12 = 108.</p>
                 <p>Finish early? Try using a loop inside a loop to write all the times tables, from 1 to 12.</p>
-			</section>
-
-            <section>
-                <h3>Arrays</h3>
-                <p>Arrays are ordered lists of values.</p>
-                <pre><code>
-var arrayName = [element0, element1, ...];
-				</code></pre>
-                <p>You can put different types of data into an array.</p>
-                <pre><code>
-var rainbowColors = ['Red', 'Orange', 'Yellow', 'Green', 
-'Blue', 'Indigo', 'Violet'];
-var lotteryNumbers = [33, 72, 64, 18, 17, 85];
-var myFavoriteThings = ['Broccoli', 1024, 'Sherlock'];
-				</code></pre>
-            </section>
-            <section>
-                <h3>Array Length</h3>
-                <p>The length property tells you how many things are in an array</p>
-                <pre><code>
-var rainbowColors = ['Red', 'Orange', 'Yellow', 'Green', 
-'Blue', 'Indigo', 'Violet'];
-console.log(rainbowColors.length);
-				</code></pre>                
-            </section>
-            <section>
-                <h3>Using Arrays</h3>
-                <p>You can access items with "bracket notation" by using the position of the object you want. Programmers start counting at zero.</p>
-                <pre><code>
-var rainbowColors = ['Red', 'Orange', 'Yellow', 'Green', 
-'Blue', 'Indigo', 'Violet'];
-var firstColor = rainbowColors[0];
-var lastColor = rainbowColors[6];
-				</code></pre>                
-            </section>
-            <section>
-                <h3>Changing arrays</h3>
-                <p>You can use bracket notation to change an item in an array</p>
-                <pre><code>
-var myFavoriteThings = ['Broccoli', 1024, 'Sherlock'];
-myFavoriteThings[0] = 'Asparagus';            
-                </code></pre>
-            </section>
-            <section>
-                <h3>Expanding arrays</h3>
-                <p>Arrays do not have a fixed length. You can use "push" to add something to an array.</p>
-                <pre><code>
-var myFavoriteThings = ['Broccoli', 1024, 'Sherlock'];
-myFavoriteThings.push('Dancing');              
-                </code></pre>
-            </section>
-            <section>
-				<h3>Let's Develop It</h3>
-                <p>Create an array of your favorite foods. Echo a few values onto your screen.</p> 
-			</section>
-
-            <section>
-                <h3>Iterating through arrays</h3>
-                <p>Use a for loop to easily process each item in an array.</p>
-                <pre><code>
-var rainbowColors = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo', 'Violet'];
-for (var i = 0; i &lt; rainbowColors.length; i++) {
-  console.log(rainbowColors[i]);
-}              
-                </code></pre>
-            </section>
-            <section>
-				<h3>Let's Develop It</h3>
-                <p>Use a loop to make a list of all your favorite foods.</p> 
-			</section>            
+      </section>
 
 			<section>
 				<h3>Resources</h3>
