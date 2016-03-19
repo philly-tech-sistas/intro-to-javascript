@@ -133,6 +133,16 @@ if (temperature < 0 || temperature > 100) {
     console.log('not too bad temperature, wear whatever you want');
 }
 
+function whichIsBigger(num1, num2) {
+    if (num1 > num2) {
+        return num1;
+    } else if (num2 > num1) {
+        return num2;
+    } else if (num2 === num1) {
+        return num1 + ' and ' + num2;
+    }
+}
+
 /*
 Store the following into variables: city or place, job title, home, and hobby.
 Output your fortune to the screen like so: "You will be a _job_ living in a _home_ in _city or place_. For fun you will _hobby_."
