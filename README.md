@@ -20,9 +20,9 @@ Introduces boolean variable, if/then statements, loops, and arrays.
 
 Introduces the Document Object Model (DOM) and how to use JavaScript to interact with it. Includes finding and modifying nodes.
 
-### Events and Animations
+### Events, Forms, and Animations
 
-Introduces events, listening functions, user inputs, and basic animations. 
+Introduces events, listening functions, form inputs, and basic animations. 
 
 
 ## Theme customization
