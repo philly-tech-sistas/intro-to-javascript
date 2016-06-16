@@ -36,6 +36,28 @@ Introduces events, listening functions, form inputs, and basic animations.
 
 Check out [GDI Philly's Meetup calendar](http://www.meetup.com/Girl-Develop-It-Philadelphia/) to see when we are next teaching this class.
 
+### Course description
+
+JavaScript is the world's most popular programming language for a reason -- it's the primary way to build interaction on the web. Learning JavaScript is a logical next step once you've learned HTML/CSS.
+
+Many programming courses end up glossing over some of the tricky words -- 'variable', 'object', 'method' -- this course is especially designed for beginners new to programming concepts, so you'll learn to program with JavaScript. If those words are confusing to you now, no worries! You're exactly who we want to teach.
+
+In this class, we will be covering: basic development concepts, JavaScript, dynamic HTML, and animations and events. Students will exit this class with a good grasp of basic programming principles and the knowledge of how to manipulate HTML elements.
+
+### Prerequisites:
+
+You should have:
+(a) taken Intro to HTML/CSS through Girl Develop It, or
+(b) have a working knowledge of HTML
+
+This course is specifically for beginners and we advise experienced developers to not take this class.
+
+### Tech requirements:
+ - Your laptop (Mac, PC, or Linux are all okay).
+ - A modern web browser - either Chrome or Firefox.
+ - A text editor. We recommend [Sublime Text](http://sublimetext.com) because it's free and available for Mac, PC, and Linux.
+
+
 ### Have a question?
 
 Feedback, fixes and suggestions are welcome! Please [post an issue](https://github.com/cfarm/gdi-intro-js/issues) or email cat@cfarman.com.
