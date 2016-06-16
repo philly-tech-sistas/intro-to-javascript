@@ -1,32 +1,27 @@
 #Girl Develop It - Intro to JavaScript
 ===================
 
-This is the Girl Develop It Intro JavaScript course. Material based on original material by Sara Chipps, Pamela Fox, Alexis Goldstein, Izzy Johnston, Leo Newball, and Sylvia Richardson.
+This is the Girl Develop It Intro JavaScript course. Content is based on original material by Sara Chipps, Pamela Fox, Alexis Goldstein, Izzy Johnston, Leo Newball, and Sylvia Richardson.
 
-The course is meant to be taught in 4 two-hour sections. Each of the slides and practice files are customizable according to the needs of a given class or audience.
+The course is taught in 2 days. Each day's class is 4-hours long. Each of the slides and practice files are customizable according to the needs of a given class or audience.
 
-## Classes
+## Class 1
 
-### Class 1
-
-Introduction to JavaScript and Basic Programming Concepts
+### Introduction to JavaScript and Basic Programming Concepts
 
 An overview of the history of JavaScript, what it is, and how it interacts with the browser. Covers basic JavaScript concepts including variables, data types, and functions. 
 
-### Class 2
-Control Flow
+### Control Flow
 
 Introduces boolean variable, if/then statements, loops, and arrays.
 
-### Class 3
+## Class 2
 
-Introduction to the DOM
+### Introduction to the DOM
 
 Introduces the Document Object Model (DOM) and how to use JavaScript to interact with it. Includes finding and modifying nodes.
 
-### Class 4
-
-Events and Animations
+### Events and Animations
 
 Introduces events, listening functions, user inputs, and basic animations. 
 
