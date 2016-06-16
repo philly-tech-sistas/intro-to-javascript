@@ -1,5 +1,4 @@
-#Girl Develop It - Intro to JavaScript
-===================
+# Girl Develop It - JS101: JavaScript for Beginners
 
 This is the Girl Develop It Intro JavaScript course. Content is based on original material by Sara Chipps, Pamela Fox, Alexis Goldstein, Izzy Johnston, Leo Newball, and Sylvia Richardson.
 
