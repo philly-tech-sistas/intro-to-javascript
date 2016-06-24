@@ -181,17 +181,39 @@ document.write('Hello World!');
        
             <section>
 				<h3>Variables</h3>
-                <p>A variable is a place to store values</p>			
+                <ul>
+                    <li>The value of a variable can change over time.</li>
+                    <li>A variable is a place to store values</li>
+                </ul>
 			</section>
             <section>
 				<h3>Variable Values</h3>
-                <ul>
-                    <li>When you first create a variable, it does not have a value (it is undefined).</li>
-                    <li>You can set a value for a variable.</li>
-                    <li>Variables can hold different types of information, like words, numbers, and collections of data.</li>
-                    <li>The value of a variable can change over time.</li>
-                </ul>
+                <p>When you first create a variable, it can be undefined (it has no value) or you can give it a value.</p>
+                <pre><code>
+var numberOfKittens;
+var numberOfKittens = 5;
+                </code></pre>
 			</section>
+            <section>
+                <h3>Declaring a Variable</h3>
+                <p>To declare (create) a variable, just type the word "var" and the variable name.</p>
+                <pre><code>
+var numberOfKittens;
+                </code></pre>
+                <p>It is a good idea to give your variable a starting value. This is called initializing the variable.</p>
+                <pre><code>
+var numberOfKittens = 5;
+                </code></pre> 
+            </section>
+            <section>
+                <h3>Variable value types</h3>
+                <p>Variables can hold different types of information, like words, numbers, and collections of data.</p>
+                <pre><code>
+var numberOfKittens = 10;
+var numberOfKittens = 'ten';
+var numberOfKittens = [0, 10, 15, 2];
+                </code></pre>
+            </section>
             <section>
 				<h3>Naming Variables</h3>
                 <ul>
@@ -200,21 +222,6 @@ document.write('Hello World!');
                     <li>Variable names need to start with a letter, $, or _.</li>
                     <li>Variable names can only be made of letters, numbers, $, or _.</li>
                 </ul>
-			</section>
-            <section>
-				<h3>Declaring a Variable</h3>
-                <p>To declare (create) a variable, just type the word "var" and the variable name.</p>
-                <pre><code>
-&lt;script&gt;
-    var numberOfKittens;
-&lt;/script&gt;
-				</code></pre>
-                <p>It is a good idea to give your variable a starting value. This is called initializing the variable.</p>
-                <pre><code>
-&lt;script&gt;
-    var numberOfKittens = 5;
-&lt;/script&gt;
-				</code></pre> 
 			</section>
             <section>
 				<h3>Using a Variable</h3>
