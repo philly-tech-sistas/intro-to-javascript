@@ -43,3 +43,52 @@ var hobby = 'surf';
 var fortune = 'You will be a ' + job + ' living in a ' + home + ' in ' + city + '. For fun you will ' + hobby + '.';
 
 document.getElementById('welcome-message').innerHTML = fortune;
+
+// 1. add arguments inside the parentheses:
+function sayMyName(first, last) {
+// 2. use the arguments first and last in my function code
+  var fullName = first + ' ' + last;
+  console.log(fullName);
+}
+
+// 3. call my function - with argument values - in quotes because they are strings
+sayMyName('Cat', 'Farman'); // don't forget to call it!
+
+
+sayMyName('Destiny\'s', 'Child'); // should output "Destiny's Child"
+sayMyName('Kelly', 'Rowland'); // should output "Kelly Rowland"
+sayMyName('Michelle', 'Williams');
+sayMyName('Beyoncé', 'Knowles');
+
+
+function squareNumber(num) {
+    return num*num;
+}
+
+var squareResult = squareNumber(20);
+console.log(squareResult);
+
+
+function halfNumber(num) {
+    return num/2;
+}
+
+var halfNumberResult = halfNumber(10);
+console.log(halfNumberResult);
+
+// these are placeholders: finish them using the puzzles page as a guide
+function percentOf(num1, num2) {
+    var result = num1 / num2 * 100;
+    console.log(num1 + " is " + result + "% of " + num2);
+    return result;
+}
+
+var percentResult = percentOf(2,4);
+console.log(percentResult);
+
+function areaOfCircle(radius) {
+    // var result = ;
+    console.log("The area for a circle with radius 2 is 12.566370614359172.");
+    // return result;
+}
+
