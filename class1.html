@@ -353,14 +353,16 @@ turtleFact();
 				<h3>Let's Develop It</h3>
                 <p>Turn the code you wrote to output someone's full name into a function, then use it to output the name to the <code>practice.html</code> page.</p>
 <pre><code>function sayMyName() {
-var firstName = 'Kelly ';
-var lastName = 'Rowland';
-var fullName = firstName + lastName;
-document.getElementById('headline').innerHTML = fullName;
+  var firstName = 'Kelly ';
+  var lastName = 'Rowland';
+  var fullName = firstName + lastName;
+  document.getElementById('headline').innerHTML = fullName;
 }
 
 sayMyName(); // don't forget to call it!
 </code></pre>
+
+<p>Bonus: Make your function automatically add a space between the names.</p>
 			</section>
 
 <section>
@@ -370,17 +372,34 @@ sayMyName(); // don't forget to call it!
     console.log('Come here, ' + kittenName + '!');
 }
 callKitten ('Fluffy'); //outputs 'Come here, Fluffy!'
+callKitten ('Pumpkin'); //outputs 'Come here, Pumpkin!'
+</code></pre>             
+            </section>
 
-function addNumbers(a, b) {
+            <section>
+                <h3>Let's Develop It</h3>
+                <p>Update your full name function to take multiple arguments as inputs, so that it outputs different names to the page depending on how you call it:</p>
+<pre><code>sayMyName('Destiny\'s', 'Child'); // should output "Destiny's Child"
+sayMyName('Kelly', 'Rowland'); // should output "Kelly Rowland"
+sayMyName('Michelle', 'Williams');
+sayMyName('Beyoncé', 'Knowles');
+</code></pre>                
+            </section>
+
+<section>
+                <h3>Arguments</h3>
+                <p>Argument values can be numbers, which means we can make Javascript do math for us over and over.</p>
+<pre><code>function addNumbers(a, b) {
     console.log(a + b);
 }
 addNumbers(5,7); //outputs 12
 addNumbers(9,12); //outputs 21
 </code></pre>             
             </section>
+
             <section>
                 <h3>Arguments</h3>
-                <p>You can also pass variables into functions. These variables do not need to have the same name as the function arguments.</p>
+                <p>You can also pass variables into functions. <span class="blue">Note:</span> These variables <strong>do not</strong> have the same name as the function arguments.</p>
 <pre><code>function addOne(inputNumber){
     var newNumber = inputNumber + 1;
     console.log('You now have ' + newNumber);
@@ -395,32 +414,46 @@ addOne(numberOfPuppies);
             </section>
 
             <section>
-                <h3>Let's Develop It</h3>
-                <p>Update your full name function to take multiple arguments as inputs, so that it outputs different names to the page depending on how you call it:</p>
-<pre><code>// sayMyName('Admiral')    
-</code></pre>                
-            </section>
-
-            <section>
-                <h3>Let's Develop It</h3>
-                <p><a href="https://cfarm.github.io/gdi-intro-js/puzzles.html#calculator">JavaScript Puzzle: The Calculator</a></p>
-            </section>
-
-            <section>
                 <h3>Returning Values</h3>
                 <p>You can have a function give you back a value, to use later.</p>
 <pre><code>function square(num) {
     return num * num;
 }
 console.log(square(4));   // outputs '16'.
-var squareOfFive = square(5); // will make squareOfFive equal 25.
 </code></pre>
                 <p>Return will immediately end a function.</p>
             </section>
+
+            <section>
+                <h3>Returning Values</h3>
+                <p>You can use variables to save the return value from a function.</p>
+<pre><code>function square(num) {
+    return num * num;
+}
+var squareOfFive = square(5); // will make squareOfFive equal 25.
+</code></pre>
+            </section>
+
             <section>
 				<h3>Let's Develop It</h3>
-                <p>Add a return statement to your name function. Use that function to set the value of a variable.</p> 
+                <p>Add a return statement to your name function. Use that function to set the value of a variable.</p>
+<pre><code>function sayMyName(first, last) {
+    // this also adds a space between the 2 arguments
+    return first + ' ' + last;
+}
+var name1 = sayMyName('Kelly', 'Rowland');
+var name2 = sayMyName('Michelle', 'Williams');
+
+alert(name1);
+document.getElementById('headline').innerHTML = name2;
+</code></pre>                
 			</section>
+
+
+            <section>
+                <h3>Let's Develop It</h3>
+                <p><a href="https://cfarm.github.io/gdi-intro-js/puzzles.html#calculator">JavaScript Puzzle: The Calculator</a></p>
+            </section>
 
             <!-- BREAK -->
 
