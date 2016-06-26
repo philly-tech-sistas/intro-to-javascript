@@ -680,8 +680,23 @@ if (bananas &gt;=2 &amp;&amp; bananas &lt;7) {
             </section>
             <section>
         <h3>Let's Develop It</h3>
-                <p>Add a logical operator to your what to wear program.</p> 
+                <p>Add a logical operator to your what to wear program.</p>
+
+<pre><code>if (temperature > 60 && temperature < 70) {
+    document.getElementById('welcome-message').innerHTML = 
+        'the weather is lovely, wear whatever you like';
+} else if (temperature > 100 || temperature < 0) {
+   document.getElementById('welcome-message').innerHTML = 
+        'stay inside, the weather is awful'; 
+}
+</code></pre>
+
       </section>
+
+            <section>
+                <h3>Let's Develop It</h3>
+                <p><a href="https://cfarm.github.io/gdi-intro-js/puzzles.html#bigger">JavaScript Puzzle: What number is bigger?</a></p>
+            </section>
 
 
               <section>
