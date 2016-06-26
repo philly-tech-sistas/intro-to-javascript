@@ -121,24 +121,7 @@ document.getElementById('recipeTitle').innerHTML = myRecipe.recipeTitle;
       </section>
 
             <section>
-			  <h3>Arrays of Objects</h3>
-			  <p>Since arrays can hold any data type, they can also hold objects</p>
-              <pre><code>
-var myCats = [
-  {name: 'Willa', 
-   age: 8},
-  {name: 'Squeaky',
-   age: 12}
-];
-
-for (var i = 0; i &lt; myCats.length; i++) {
-  var myCat = myCats[i];
-  console.log(myCat.name + ' is ' + myCat.age + ' years old.');
-}
-			  </code></pre>
-			</section>
-            <section>
-			  <h3>Arrays of Objects</h3>
+			  <h3>Objects as function arguments</h3>
 			  <p>Just like other data types, objects can be passed into functions:</p>
               <pre><code>
 var WillaTheCat = {
@@ -155,10 +138,57 @@ function describeCat(cat) {
 describeCat(WillaTheCat);
 			  </code></pre>
 			</section>
+
             <section>
-				<h3>Let's Develop It</h3>
-                <p>Create a loop to list all the ingredients from your recipe object.</p>
-			</section> 
+      				<h3>Let's Develop It</h3>
+              <p>Write a function that loops through all the ingredients from your recipe object and lists them on your <code>practice.html</code> page.</p>
+              <p>Your function should have 1 argument, which is an object.</p>
+<pre><code>function listIngredients(recipe) {
+  var ingredients = recipe.ingredients;
+  for (var i = 0; i &lt; ingredients.length; i++) {
+    var ingredient = ingredients[i] + ', ';
+    document.getElementById('foods').innerHTML += ingredient;
+  }
+}
+
+listIngredients(myRecipe);
+        </code></pre>
+
+      			</section>
+
+            <section>
+        <h3>Arrays of Objects</h3>
+        <p>Since arrays can hold any data type, they can also hold objects</p>
+              <pre><code>
+var myCats = [
+  {name: 'Willa', 
+   age: 8},
+  {name: 'Squeaky',
+   age: 12}
+];
+
+for (var i = 0; i &lt; myCats.length; i++) {
+  var myCat = myCats[i];
+  console.log(myCat.name + ' is ' + myCat.age + ' years old.');
+}
+        </code></pre>
+      </section>
+
+      <section>
+              <h3>Let's Develop It</h3>
+              <p>Create a new array named recipeBook.</p>
+              <p>Create a new recipe object.</p>
+              <p>Add your recipe objects to the recipeBook list using the <a href="http://cfarm.github.io/gdi-intro-js/class1.html#/62"><code>push()</code> function</a>.</p>
+              <p>Loop through the recipeBook array to list information about each recipe title and servings on the page.</p>
+<pre><code>for (var i = 0; i < recipeBook.length; i++) {
+  var recipe = recipeBook[i];
+  var servings = recipe.servings;
+  var title = recipe.recipeTitle + ', serves ' + servings + ' <br>';
+  document.getElementById('recipeList').innerHTML += title;
+}
+        </code></pre>
+
+            </section>
 
             <section>
               <h3>Object methods</h3>
@@ -183,7 +213,13 @@ WillaTheCat.eat(WillaTheCat.likes[0]);
 WillaTheCat.eat(WillaTheCat.likes[1]);
 WillaTheCat.eat(WillaTheCat.likes[2]);
 			  </code></pre>
-            </section>            
+            </section>    
+
+            <section>
+              <h3>Let's Develop It</h3>
+                <p>Add a function to your recipe object</p>
+            </section>
+
             <section>
               <h3>Built-in methods</h3>
               <p>JS provides several built-in objects:</p>
