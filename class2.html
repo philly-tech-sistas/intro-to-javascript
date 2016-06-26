@@ -217,7 +217,16 @@ WillaTheCat.eat(WillaTheCat.likes[2]);
 
             <section>
               <h3>Let's Develop It</h3>
-                <p>Add a function to your recipe object</p>
+                <p>Add a function to your recipe objects called 'describe.' It should return the recipe title and servings. <span class="blue">Hint:</span> reuse your code from your recipeBook loop.</p>
+                <p>Update your recipeBook loop to call this function in place of the previous describe + display code.</p>
+<pre><code>myRecipe.describe = function() {
+    return myRecipe.recipeTitle + ', serves ' + myRecipe.servings + ' <br>';
+  }
+for (var i = 0; i < recipeBook.length; i++) {
+  var recipe = recipeBook[i];
+  document.getElementById('recipeList').innerHTML += recipe.describe();
+}
+</code></pre>                
             </section>
 
             <section>
