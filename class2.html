@@ -56,10 +56,8 @@ var objectName = {
 			  </code></pre>
               <pre><code>
 var aboutMe = {
-  hometown: 'Atlanta, GA',
-  hair: 'Auburn',
-  likes: ['knitting', 'code'],
-  birthday: {month: 10, day: 17}
+  hometown: 'Somewhere in Texas',
+  hair: 'brown, usually short'
 }; 
 			  </code></pre>
 			</section>
@@ -68,10 +66,10 @@ var aboutMe = {
         <h3>Objects</h3>
         <p>Object properties can have values with all of the data types we've seen, including numbers, text, arrays, and other objects.</p>
 <pre><code>var aboutMe = {
-  hometown: 'Atlanta, GA',
-  hair: 'Auburn',
-  likes: ['knitting', 'code'],
-  birthday: {month: 10, day: 17}
+  hometown: 'Somewhere in Texas',
+  hair: 'brown, usually short',
+  likes: ['kittens', 'code', 'dancing'],
+  birthday: {month: 4, day: 17}
 }; 
         </code></pre>
       </section>
@@ -90,8 +88,8 @@ var myHair = aboutMe['hair'];
 			  <p>You can use dot or bracket notation to change properties</p>
               <pre><code>
 var aboutMe = {
-  hometown: 'Atlanta, GA',
-  hair: 'Auburn'
+  hometown: 'Somewhere in Texas',
+  hair: 'brown, usually short'
 }; 
 aboutMe.hair = 'blue';
 			  </code></pre>
@@ -127,10 +125,10 @@ document.getElementById('recipeTitle').innerHTML = myRecipe.recipeTitle;
 			  <p>Since arrays can hold any data type, they can also hold objects</p>
               <pre><code>
 var myCats = [
-  {name: 'Lizzie', 
-   age: 18},
-  {name: 'Daemon',
-   age: 1}
+  {name: 'Willa', 
+   age: 8},
+  {name: 'Squeaky',
+   age: 12}
 ];
 
 for (var i = 0; i &lt; myCats.length; i++) {
@@ -143,18 +141,18 @@ for (var i = 0; i &lt; myCats.length; i++) {
 			  <h3>Arrays of Objects</h3>
 			  <p>Just like other data types, objects can be passed into functions:</p>
               <pre><code>
-var lizzieTheCat = {
-  age: 18,
-  furColor: 'grey',
-  likes: ['catnip', 'milk'],
-  birthday: {month: 7, day: 17, year: 1996}
+var WillaTheCat = {
+  age: 8,
+  furColor: 'orange',
+  likes: ['catnip', 'tofurky', 'tuna'],
+  birthday: {month: 3, day: 10, year: 2008}
 }
 
 function describeCat(cat) {
   console.log('This cat is ' + cat.age + ' years old with ' + cat.furColor + ' fur.');
 }
 
-describeCat(lizzieTheCat);
+describeCat(WillaTheCat);
 			  </code></pre>
 			</section>
             <section>
@@ -166,9 +164,9 @@ describeCat(lizzieTheCat);
               <h3>Object methods</h3>
 			  <p>Objects can also hold functions.</p>
               <pre><code>
-var lizzieTheCat = {
-  age: 18,
-  furColor: 'grey',
+var WillaTheCat = {
+  age: 8,
+  furColor: 'orange',
   meow: function() {
     console.log('meowww');
   },
@@ -179,8 +177,11 @@ var lizzieTheCat = {
 			  </code></pre>
               <p>Call object methods using dot notation:</p>
               <pre><code>
-lizzieTheCat.meow();
-lizzieTheCat.eat('brown mushy stuff');
+WillaTheCat.meow();
+WillaTheCat.eat('tuna');
+WillaTheCat.eat(WillaTheCat.likes[0]);
+WillaTheCat.eat(WillaTheCat.likes[1]);
+WillaTheCat.eat(WillaTheCat.likes[2]);
 			  </code></pre>
             </section>            
             <section>
