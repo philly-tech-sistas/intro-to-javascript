@@ -63,15 +63,22 @@ var aboutMe = {
 }; 
 			  </code></pre>
 			</section>
+
+<section>
+        <h3>Objects</h3>
+        <p>Object properties can have values with all of the data types we've seen, including numbers, text, arrays, and other objects.</p>
+<pre><code>var aboutMe = {
+  hometown: 'Atlanta, GA',
+  hair: 'Auburn',
+  likes: ['knitting', 'code'],
+  birthday: {month: 10, day: 17}
+}; 
+        </code></pre>
+      </section>
             <section>
 			  <h3>Accessing Objects</h3>
 			  <p>You can retrieve values using "dot notation"</p>
-              <pre><code>
-var aboutMe = {
-  hometown: 'Atlanta, GA',
-  hair: 'Auburn'
-}; 
-var myHometown = aboutMe.hometown;
+              <pre><code>var myHometown = aboutMe.hometown;
 			  </code></pre>
               <p>Or using "bracket notation" (like arrays)</p>
               <pre><code>
@@ -94,9 +101,26 @@ aboutMe.pet = 'cat';
 			  </code></pre>
               <p>Or delete them</p>
               <pre><code>
-delete aboutMe.pet;
+delete aboutMe.pet; // oh noes!!!
 			  </code></pre>
 			</section>
+
+      <section>
+        <h3>Let's Develop It</h3>
+        <p>
+          <p>Create an object to hold information on your favorite recipe. It should have properties for recipeTitle (a string), servings (a number), and ingredients (an array of strings).</p> 
+          <p>Display your recipeTitle, servings, and ingredients list on the page.</p>
+<pre><code>var myRecipe = {
+  recipeTitle: 'Vegan pancakes',
+  servings: 4,
+  ingredients: ['ingredients', 'go', 'here']
+}
+document.getElementById('recipeTitle').innerHTML = myRecipe.recipeTitle; // you need to make an HTML element with id #recipeTitle for this to work
+</code></pre>
+        </p>
+
+      </section>
+
             <section>
 			  <h3>Arrays of Objects</h3>
 			  <p>Since arrays can hold any data type, they can also hold objects</p>
@@ -134,9 +158,7 @@ describeCat(lizzieTheCat);
 			</section>
             <section>
 				<h3>Let's Develop It</h3>
-                <p>Create an object to hold information on your favorite recipe. It should have properties for recipeTitle (a string), servings (a number), and ingredients (an array of strings).</p>
-                <p>Try displaying some information about your recipe.</p>
-                <p>Bonus: Create a loop to list all the ingredients.</p>
+                <p>Create a loop to list all the ingredients from your recipe object.</p>
 			</section> 
 
             <section>
