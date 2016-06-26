@@ -92,3 +92,21 @@ function areaOfCircle(radius) {
     // return result;
 }
 
+var temperature = 6;
+
+// is it cold out?
+if (temperature < 0) {
+    document.getElementById('welcome-message').innerHTML = 
+        'just stay inside it is TOO cold';
+}
+else if (temperature < 30) {
+    document.getElementById('welcome-message').innerHTML = 
+        'brrrrrr you need a hat and gloves';
+}
+else if (temperature < 50) {
+    document.getElementById('welcome-message').innerHTML = 
+        'Put on a coat!';
+} else {
+    document.getElementById('welcome-message').innerHTML = 
+        'Wear whatever you want';
+}
