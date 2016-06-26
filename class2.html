@@ -387,6 +387,7 @@ var oldSrc = imgKitten.src;
 imgKitten.src = 'http://placekitten.com/100/500';
 			  </code></pre>
             </section>
+            
             <section>
               <h3>DOM Nodes: Getting and Setting Attributes</h3>
               <p>You can also use <code>getAttribute/setAttribute</code></p>
@@ -400,9 +401,27 @@ var oldSrc = imgKitten.getAttribute('src');
 imgKitten.setAttribute('src', 'http://placekitten.com/100/500');
 			  </code></pre>
             </section>
+
+            <section>
+              <h3>DOM Nodes: Getting and Setting Attributes</h3>
+            
+              <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes">A list of HTML attributes we can change using JavaScript</a></p>
+            </section>
+
+            <section>
+              <h3>Let's Develop It</h3>
+                <p>Add a picture to your <code>practice.html</code> page. Give it an <code>id</code> attribute so we can grab it with JS.</p>
+                <p>Use JavaScript to add 'height' and 'width' attributes to the img element.</p>
+<pre><code>var imgKitten = document.getElementById('kittenPic');
+imgKitten.setAttribute('height', '200');
+imgKitten.setAttribute('width', '200');
+        </code></pre>
+            </section>
+
+
             <section>
               <h3>DOM Nodes: Styles</h3>
-              <p>You can change page css using<code>style</code></p>
+              <p>You can change page css using <code>style</code></p>
               <p>To make this CSS:</p>
               <pre><code>
 body {
@@ -432,11 +451,15 @@ pageNode.style.backgroundColor = 'pink';
 pageNode.style.paddingTop = '10px';
 			  </code></pre>
             </section>
+
             <section>
-				<h3>Let's Develop It</h3>
-                <p>Create a simple HTML page or <a href="files/class3.zip">use this sample code</a>.</p>
-                <p>Isolate a node (an element on the page) and change an attribute or add a new style.</p> 
-			</section>       
+      				<h3>Let's Develop It</h3>
+                <p>Use JavaScript to change the background color of your <code>practice.html</code> page.</p>
+<pre><code>var pageNode = document.getElementsByTagName('body')[0];
+pageNode.style.backgroundColor = 'turquoise';
+        </code></pre>
+                <p>Change the font of your h1 element using the same methods and the 'font-family' CSS property.</p>
+      			</section>       
 
             <section>
               <h3>DOM innerHTML</h3>
