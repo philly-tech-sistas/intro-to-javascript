@@ -733,6 +733,11 @@ var lastColor = rainbowColors[6];
             <section>
                 <h3>Let's Develop It</h3>
                 <p>Create an array of your favorite foods. Display a few values on your screen.</p> 
+<pre><code>var myFaveFoods = ['chocolate', 'pickles', 'avocados'];
+console.log(myFaveFoods[0]);
+console.log(myFaveFoods[1]);
+console.log(myFaveFoods[2]);
+        </code></pre> 
             </section>
 
             <section>
@@ -747,15 +752,17 @@ myFavoriteThings[0] = 'Asparagus';
                 <h3>Expanding arrays</h3>
                 <p>Arrays do not have a fixed length. You can use "push" to add something to an array.</p>
 <pre><code>var myFavoriteThings = ['Broccoli', 1024, 'Sherlock'];
-myFavoriteThings.push('Dancing');              
+myFavoriteThings.push('Dancing');           
                 </code></pre>
             </section>
             
             <section>
             <h3>Let's Develop It</h3>
-            <p>Change the first and last items in your favorite foods array using bracket notation, and add new items using the "push" function.</p>
+            <p>Change the first and last items in your favorite foods array using bracket notation, and add new items using the "push" function. Then display your new values on the page.</p>
 <pre><code>var myFaveFoods = ['chocolate', 'pickles', 'avocados', 'tofu scramble', 'pancakes', 'donuts'];
-myFaveFoods.push('lemons');              
+myFaveFoods[0] = 'chocolate cake to be more specfic';
+myFaveFoods.push('lemons');
+document.getElementById('foods').innerHTML = myFaveFoods;           
 </code></pre>            
             </section>
 
