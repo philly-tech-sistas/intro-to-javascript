@@ -330,7 +330,7 @@ var imgKitten = document.getElementById('kittenPic');
             </section>
             <section>
               <h3>DOM Access: By Tag Name</h3>
-              <p>You can certain types of HTML elements using this method:</p>
+              <p>You can get a list of specific kinds of elements using this method:</p>
               <pre><code>
 document.getElementsByTagName(tagName);
 			  </code></pre>
@@ -371,6 +371,21 @@ document.getElementById('uniqueID'); //returns a single node
 document.getElementsByTagName('p'); //returns multiple nodes
 var specficParagraph = document.getElementsByTagName('p')[2];
 			  </code></pre>
+            </section>
+
+            <section>
+              <h3>Let's Develop It</h3>
+                <p>Save the <code>jumbotron</code>, <code>header</code> and <code>footer</code> elements in your <code>practice.html</code> file as variables.</p>
+                <p>Use <code>getElementsByClassName</code>, <code>querySelector</code> and <code>getElementsByTagName</code>.</p>
+                <p>Log each variable to the console to view the HTML associated with each.</p>
+<pre><code>var jumbotron = document.getElementsByClassName('jumbotron')[0];
+var header = document.querySelector('.header');
+var footer = document.getElementsByTagName('footer')[0];
+
+console.log(jumbotron);
+console.log(header);
+console.log(footer);
+        </code></pre>
             </section>
 
             <section>
@@ -459,6 +474,7 @@ pageNode.style.paddingTop = '10px';
 pageNode.style.backgroundColor = 'turquoise';
         </code></pre>
                 <p>Change the font of your h1 element using the same methods and the 'font-family' CSS property.</p>
+                <p>Change some more CSS properties of your jumbotron, header, and footer elements using your existing variables.</p>
       			</section>       
 
             <section>
