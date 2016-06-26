@@ -801,8 +801,24 @@ for (var i = 0; i &lt; rainbowColors.length; i++) {
             </section>
             <section>
         <h3>Let's Develop It</h3>
-                <p>Use a loop to make a list of all your favorite foods.</p> 
+        <p>Use a loop to make a list of all your favorite foods. For now, use <code>console.log</code> to view the list.</p> 
+<pre><code>var myFaveFoods = ['pancakes', 'avocados', 'donuts'];
+for (var i = 0; i &lt; myFaveFoods.length; i++) {
+  console.log(myFaveFoods[i]);
+}</code></pre>
       </section>            
+
+<section>
+        <h3>Let's Develop It</h3>
+        <p>Now update your loop so it can output the list of foods on your HTML page.</p> 
+  
+<pre><code>var foodString = '';
+for (var i = 0; i < myFaveFoods.length; i++) {
+  foodString += myFaveFoods[i] + ', ';
+}             
+document.getElementById('foods').innerHTML = foodString;
+</code></pre>
+      </section>  
 
             <section>
                 <h3>Loops and logic</h3>
