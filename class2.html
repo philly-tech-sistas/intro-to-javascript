@@ -590,7 +590,7 @@ myTarget.onclick=function(){
             <section>
         <h3>Let's Develop It</h3>
                 <!-- <p>Download <a href="class2-downloads.zip">class2 exerise files</a>.</p> -->
-                <p>Let's use that big green "Click me!" button.""
+                <p>Let's use that big green "Click me" button!
                 <p>Make some JavaScript code fire after a <code>click</code> event. Try adding the event to the HTML and adding a listening function.</p>
 
       </section>            
@@ -622,11 +622,11 @@ element.onclick = function (event) {
       </section>
             <section>
         <h3>Let's Develop It</h3>
-                <p>Write code that targets this link:</p> 
+                <p>Add this link to your page, then write JavaScript that targets this link:</p> 
                 <pre><code>
 &lt;a href="http://girldevelopit.com/" id="gdiLink"&gt;Girl Develop It&lt;/a&gt;
         </code></pre>
-                <p>When a user clicks the link, the page should display an error message instead of going to the Girl Develop It homepage.</p>
+                <p>When a user clicks the link, the page should display an alert <strong>instead</strong> of going to the Girl Develop It homepage.</p>
       </section>            
   
       
@@ -651,21 +651,6 @@ console.log (temperature);
         </code></pre>
                 <p>You can retrieve the value of a form at any time. Try <code>onblur</code> (when a form element loses focus).</p>
       </section>
-            <section>
-                <h3>Radio Buttons</h3>
-                <p>Radio buttons usually do not have IDs, so you will need to use an array:</p>
-                <pre><code>
-var radios = document.getElementsByName('tempFormat');
-
-for (var i = 0, length = radios.length; i &lt; length; i++) {
-    if (radios[i].checked) {
-        var radioButtonValue = radios[i].value;
-        // only one radio can be checked, so stop now
-        break;
-    }
-}
-        </code></pre>
-      </section>
              <section>
                 <h3>Submit buttons</h3>
                 <p>If you are going to retrieve form values with the submit button, be sure to prevent the default action!</p>
@@ -681,7 +666,7 @@ submitButton.onclick = function () {
             <section>
         <h3>Let's Develop It</h3>
           <p>
-            Add this input HTML to your page:
+            Add this form HTML to your page:
           </p>
           <pre><code>
 &lt;form id="sayMyName"&gt;
@@ -690,7 +675,7 @@ submitButton.onclick = function () {
 &lt;/form&gt;
         </code></pre>
         <p>Write event code that collects the name from the page when the form is submitted.</p>
-        <p>Put the name from the user input onto the page in a new HTML element.</p>
+        <p>Put the name from the user input onto the page in a new HTML element, or an alert.</p>
       </section>  
 
             <section>
@@ -766,7 +751,10 @@ targetPic.onclick = function () {
       </section>
             <section>
         <h3>Let's Develop It</h3>
-                <p>Using the function from the previous slide as a base, try changing some animation parameters. What happens?</p>
+          <p>Find a picture of a turtle (or other cute animal) and add it to your HTML page:</p>
+          <pre><code><img src="turtle.jpg" alt="Turtle"/>
+          </code></pre>
+          <p>Using the function from the previous slide as a base, try changing some animation parameters. What happens?</p>
       </section>
 
       <section>
