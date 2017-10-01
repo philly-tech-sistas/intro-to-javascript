@@ -391,6 +391,19 @@ console.log(footer);
         </code></pre>
             </section>
 
+            <!-- <section>
+              <h3>DOM Nodes: InnerHTML</h3>
+              <p>You can change the content inside an element by accessing its <code>.innerHTML</code> property.</p>
+              <p>Replace the content:</p>
+              <pre><code>
+document.getElementById('headline').innerHTML = 'New message!';
+        </code></pre>
+              <p>Or add on to it:</p>
+              <pre><code>
+document.getElementById('headline').innerHTML += 'Additional new message after the existing content.';
+        </code></pre>
+            </section> -->
+
             <section>
               <h3>DOM Nodes: Attributes</h3>
               <p>You can access and change attributes of DOM nodes using dot notation.</p>
@@ -561,11 +574,12 @@ element.onclick = function () {
                 <h3>Events and Code</h3>
                 <p>How do you make an event trigger some code?</p>
                 <ol>
-                    <li>Break your code into functions</li>
-                    <li>Associate a function with a JavaScript event</li>
+                    <li>Save your event target as a variable</li>
+                    <li>Make a function that does what you want. This is called the <em>event listener</em>.</li>
+                    <li>Attach the function to the event with an <em>event handler</em> (onclick, onload, onscroll)</li>
                 </ol>                    
       </section>
-            <section>
+            <!-- <section>
                 <h3>Calling Functions from HTML</h3>
                 <p>You can call a function directly from your HTML code:</p>        
           <pre><code>
@@ -576,16 +590,18 @@ function sayHi() {
     alert ('Hi!');
 }
         </code></pre>
-            </section>
+            </section> -->
+
             <section>
                 <h3>Listening Functions</h3>
-                <p>Listening functions work like many of the other things we have done. First, find the object:</p>
+                <p>Listening functions require the same steps as other things we have practiced- first, you have to save the element you want to target:</p>
                 <pre><code>
-var myTarget = document.getElementById('clickMe');
+var myTarget = document.getElementById('clickMe'); // save as a variable
                 </code></pre>
-                <p>Then add an event to that object:</p>
+                <p>Then add an event handler('onclick') and a function (event listener) to that object:</p>
                 <pre><code>
-myTarget.onclick=function(){
+myTarget.onclick = sayHi;
+function sayHi(){
      alert ('Hi!');
 }
                 </code></pre>
