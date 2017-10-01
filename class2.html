@@ -697,6 +697,29 @@ submitButton.onclick = function () {
         <p>Put the name from the user input onto the page in a new HTML element, or an alert.</p>
       </section>  
 
+      <section>
+        <h3>Let's Develop It</h3>
+          <p>Let's make a form for users to submit recipes to our recipeBook.
+          <p>
+            Add this form HTML to your page:
+          </p>
+          <pre><code>&lt;form id="shareRecipes"&gt;
+&lt;label for="shareRecipeTitle"&gt;Recipe title:&lt;/label&gt; &lt;input type="text" id="shareRecipeTitle" &gt;&lt;br&gt;
+&lt;label for="shareServings"&gt;How many servings?&lt;/label&gt; &lt;input type="text" id="shareServings" &gt;&lt;br&gt;
+&lt;fieldset&gt;
+  &lt;legend&gt;What ingredients do you use?&lt;/legend&gt; &lt;br&gt;
+  &lt;label for="shareIngredients1"&gt; &lt;input type="text" id="shareIngredients1" &gt;&lt;br&gt;
+  &lt;label for="shareIngredients2"&gt; &lt;input type="text" id="shareIngredients2" &gt;&lt;br&gt;
+  &lt;label for="shareIngredients3"&gt; &lt;input type="text" id="shareIngredients3" &gt;&lt;br&gt;
+  &lt;label for="shareIngredients4"&gt; &lt;input type="text" id="shareIngredients4" &gt;&lt;br&gt;
+&lt;/fieldset&gt;
+&lt;label for="submitSharedRecipe"&gt;&lt;/label&gt; &lt;input id="submitSharedRecipe" type="submit" value="Submit shared recipe" /&gt;
+&lt;/form&gt;</code></pre>
+        <p>Write event code that collects the recipe title, servings, and ingredients from the page when the form is submitted (use a submit event).</p>
+        <p>The info should be saved as an object and then added to the recipeBook array.</p>
+        <p>Use your listIngredients() function to print the recipe to the page after the new recipe object is saved.</p>
+      </section>  
+
             <!-- <section>
         <h3>Timing Events</h3>
         <p>In JavaScript, is possible to execute some code at specified time intervals.</p>
