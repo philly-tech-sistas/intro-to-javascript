@@ -15,7 +15,8 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
 		<link rel="stylesheet" href="reveal/css/reveal.css">
-		<link rel="stylesheet" href="reveal/css/theme/gdisunny.css" id="theme">
+		<!-- <link rel="stylesheet" href="reveal/css/theme/gdisunny.css" id="theme"> -->
+    <link rel="stylesheet" href="reveal/css/theme/gdilight.css" id="theme">
 		<link rel="stylesheet" href="css/custom.css">
 
 		<!-- For syntax highlighting -->
@@ -44,6 +45,25 @@
                 <p><a href="js101-downloads.zip">Download class files</a></p>
             </section>
                 
+            <section id="toc">
+                <h3>Table of contents</h3>
+                <ul>
+                  , data types, and functions.
+
+Control Flow
+Introduces boolean variable, if/then statements, loops, and arrays.
+                    <li><a href="#/variables">Variables</a></li>
+                    <li><a href="#/data-types">Data types</a></li>
+                    <li><a href="#/functions">Functions</a></li>
+                    <li><a href="#/boolean">Boolean variables</a></li>
+                    <li><a href="#/conditionals">Conditionals (if/then statements)</a></li>
+                    <li><a href="#/loops">loops</a></li>
+                    <li><a href="#/arrays">arrays</a></li>
+                    <li><a href="#/functions">functions</a></li>
+                    <li><a href="#/functions">functions</a></li>
+                    <li><a href="#/functions">functions</a></li>
+                </ul>
+            </section>
         
             <section>
               <h3>Welcome!</h3>
@@ -470,8 +490,48 @@ document.getElementById('headline').innerHTML = name2;
 
 
             <section>
-                <h3>Let's Develop It</h3>
-                <p><a href="https://cfarm.github.io/gdi-intro-js/puzzles.html#calculator">JavaScript Puzzle: The Calculator</a></p>
+                <h3>Let's Develop It: The Calculator</a></h3>
+                <h4>Part 1 of 4</h4>
+
+                <p class="left-align">Write a function called <code>squareNumber</code> that will take one argument (a number), square that number, and return the result. It should also log a string like "The result of squaring the number 3 is 9."</p>
+
+
+                <p class="left-align"><a href="https://github.com/cfarm/gdi-intro-js/blob/gh-pages/solutions/calculator-squareNumber.js">See one possible solution on Github.</a>
+            </section>
+
+            <section>
+                <h3>Let's Develop It: The Calculator</a></h3>
+                <h4>Part 2 of 4</h4>
+                <p class="left-align">Write a function called <code>halfNumber</code> that will take one argument (a number), divide it by 2, and return the result. It should also log a string like "Half of  5 is 2.5.".</p>
+
+                <p class="left-align"><a href="https://github.com/cfarm/gdi-intro-js/blob/gh-pages/solutions/calculator-halfNumber.js">See one possible solution on Github.</a>
+
+            </section>
+
+            <section>
+                <h3>Let's Develop It: The Calculator</a></h3>
+                <h4>Part 3 of 4</h4>
+
+                <p class="left-align">Write a function called <code>percentOf</code> that will take two numbers, figure out what percent the first number represents of the second number, and return the result. It should also log a string like "2 is 50% of 4."</p>
+
+                <p class="left-align"><a href="https://github.com/cfarm/gdi-intro-js/blob/gh-pages/solutions/calculator-percentOf.js">See one possible solution on Github.</a>
+
+            </section>
+
+            <section>
+                <h3>Let's Develop It: The Calculator</a></h3>
+                <h4>Part 4 of 4</h4>
+                <p class="left-align">
+                  Write a function called <code>areaOfCircle</code> that will take one argument (the radius), calculate the area based on that, and return the result. It should also log a string like "The area for a circle with radius 2 is 12.566370614359172."
+                    <ul><li>Bonus: Round the result so there are only two digits after the decimal.</li></ul>
+                </p>
+
+                <p class="left-align"><a href="https://github.com/cfarm/gdi-intro-js/blob/gh-pages/solutions/calculator-areaOfCircle.js">See one possible solution on Github.</a>
+
+
+            </section>
+                
+             
             </section>
 
             <!-- BREAK -->
@@ -492,7 +552,7 @@ console.log(receipt);
 </code></pre>
             </section>
     
-            <section>
+            <!-- <section>
                 <h3>Variable Scope</h3>
                 <p>The scope of a variable is how long the computer will remember it.</p>
 
@@ -519,7 +579,7 @@ whatIsAwesome();
 console.log (awesomeGroup + ' is pretty awesome.'); //Won't work
 </code></pre>
             </section>
-
+ -->
             <section>
                 <h3>Boolean Variables</h3>
                 <p>Boolean variables represent the logical values True and False</p>
