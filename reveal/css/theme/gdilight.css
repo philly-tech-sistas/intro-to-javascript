@@ -57,7 +57,7 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #f05b62;
+  color: #016066;
   font-family: "Gotham-Bold", Impact, sans-serif;
   line-height: 0.9em;
   letter-spacing: 0.02em;
@@ -71,16 +71,13 @@ body {
  * LINKS
  *********************************************/
 .reveal a:not(.image) {
-  color: #01a9b4;
-  text-decoration: none;
-  -webkit-transition: color .15s ease;
-  -moz-transition: color .15s ease;
-  -ms-transition: color .15s ease;
-  -o-transition: color .15s ease;
-  transition: color .15s ease; }
+  color: #01757D;
+  text-decoration: underline;
+}
 
 .reveal a:not(.image):hover {
-  color: #f9b8bb;
+  color: #fff;
+  background-color: #01757D;
   text-shadow: none;
   border: none; }
 

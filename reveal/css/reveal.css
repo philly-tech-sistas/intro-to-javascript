@@ -93,6 +93,13 @@ body {
 * OVERRIDES
 **********************************************/
 .left-align{text-align:left}
+.reveal ul.left-align {
+	margin-left: 0.125em;
+	display: list-item;
+}
+.reveal ul.left-align li {
+	display: list-item;
+}
 .right-align{ text-align:right}
 .left{float:left}
 .right{float:right}
