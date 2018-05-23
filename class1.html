@@ -66,7 +66,7 @@
               <ul>
                 <li>Who are you?</li>
                 <li>What do you hope to get out of the class?</li>
-                <li>What's something you're looking forward to in 2018?</li>
+                <li>What do you like about summer?</li>
               </ul>
               </div>
             </section>
@@ -93,7 +93,7 @@
                 <h3>What is JavaScript?</h3>
                 <ul>
                     <li>JavaScript is standardized by the <a href="https://tc39.github.io/ecma262/">"ECMAScript" specifications</a>.</li>
-                    <li>With JavaScript, you can write code once and use it everywhere. Remember, you want DRY code (<a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself">Don't Repeat Yourself</a>).</li>
+                    <li>With JavaScript, you can write code once and use it everywhere. Pro tip: you want DRY code (<a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself">Don't Repeat Yourself</a>).</li>
                 </ul>
             </section>
             <section>
@@ -132,7 +132,7 @@
             </section>
             <section>
                 <h3>Comments</h3>
-                <p>You can leave comments in your code&mdash;notes that people can read and computers will ignore.</p>
+                <p class="left-align">You can leave comments in your code&mdash;notes that people can read and computers will ignore.</p>
 <pre><code>&lt;script&gt;
     /*I can wrap long comments 
     with multiple lines 
@@ -140,6 +140,11 @@
     console.log('Hello World!'); //Or mark short comments like this
 &lt;/script&gt;
 </code></pre>
+<p class="left-align"><span class="blue">Tip:</span> You can select text or a line in Sublime Text and comment it out easily with the keyboard:</p>
+<ul class="left-align">
+  <li>Control + / (Windows)</li>
+  <li>Command(⌘) + / (Mac)</li>
+</ul>
             </section>
             <section>
                 <h3>Getting results onto your screen</h3>
@@ -219,8 +224,10 @@ console.log(numberOfKittens);
 console.log(numberOfKittens);
 document.getElementById('headline').innerHTML = numberOfKittens;
 </code></pre>
+
+<p>Refresh your page to see where the variable value appears.
             </section>
-			</section>
+
        
             
             <section>
@@ -326,8 +333,20 @@ console.log(kittensName); //Outputs 'Admiral Snuggles'
 			</section>
 
             <section>
-                <h3>Let's Develop It</h3>
-                <p><a href="https://cfarm.github.io/gdi-intro-js/puzzles.html#class1">JavaScript Puzzle: The Fortune Teller</a></p>
+                <h3>Let's Develop It: The Fortune Teller</h3>
+
+<figure style="float: right;">
+<a title="By No machine-readable author provided. Paulblais86 assumed (based on copyright claims). [Public domain], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Cootie_catcher.jpg"><img width="200" alt="Cootie catcher" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Cootie_catcher.jpg/512px-Cootie_catcher.jpg"></a></figure>
+
+<p class="left-align">Why pay a fortune teller when you can just program your fortune yourself?</p>
+
+<ul class="left-align">
+  <li>
+    Store the following into variables: city or place, job title, home, and hobby.</li>
+<li>Output your fortune to the screen like so: "You will be a _job_ living in a _home_ in _city or place_. For fun you will _hobby_."</li>
+</ul>
+<br>
+<p class="left-align"><span class="blue">Need help?</span> <a href="https://github.com/cfarm/gdi-intro-js/blob/gh-pages/solutions/fortune-teller.js">See one possible solution on Github.</a></p>
             </section>
 
             <section>
