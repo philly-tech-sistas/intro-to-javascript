@@ -48,20 +48,13 @@
             <section id="toc">
                 <h3>Table of contents</h3>
                 <ul>
-                  , data types, and functions.
-
-Control Flow
-Introduces boolean variable, if/then statements, loops, and arrays.
                     <li><a href="#/variables">Variables</a></li>
                     <li><a href="#/data-types">Data types</a></li>
                     <li><a href="#/functions">Functions</a></li>
                     <li><a href="#/boolean">Boolean variables</a></li>
                     <li><a href="#/conditionals">Conditionals (if/then statements)</a></li>
-                    <li><a href="#/loops">loops</a></li>
-                    <li><a href="#/arrays">arrays</a></li>
-                    <li><a href="#/functions">functions</a></li>
-                    <li><a href="#/functions">functions</a></li>
-                    <li><a href="#/functions">functions</a></li>
+                    <li><a href="#/arrays">Arrays</a></li>
+                    <li><a href="#/loops">Loops</a></li>
                 </ul>
             </section>
         
@@ -190,7 +183,7 @@ document.getElementById('headline').innerHTML = 'Hello World!';
                 </ul>
             </section>
        
-            <section>
+            <section id="Variables">
 				<h3>Variables</h3>
                 <ul>
                     <li>A variable is a place to store values.</li>
@@ -250,7 +243,7 @@ document.getElementById('headline').innerHTML = numberOfKittens;
 
        
             
-            <section>
+            <section id="data-types">
 				<h3>Numbers</h3>
                 <p>Variable can be numbers, either integers or floats (decimals).</p>
 <pre><code>var numberOfKittens = 5;
@@ -369,7 +362,7 @@ console.log(kittensName); //Outputs 'Admiral Snuggles'
 <p class="left-align"><span class="blue">Need help?</span> <a href="https://github.com/cfarm/gdi-intro-js/blob/gh-pages/solutions/fortune-teller.js">See one possible solution on Github.</a></p>
             </section>
 
-            <section>
+            <section id="functions">
                 <h3>Functions</h3>
                 <p>Functions are separable, reusable pieces of code. 
     
@@ -580,7 +573,7 @@ console.log (awesomeGroup + ' is pretty awesome.'); //Won't work
 </code></pre>
             </section>
  -->
-            <section>
+            <section id="boolean">
                 <h3>Boolean Variables</h3>
                 <p>Boolean variables represent the logical values True and False</p>
 <pre><code>var catsAreBest = true;
@@ -588,7 +581,7 @@ var dogsRule = false;
         </code></pre>            
             </section>
 
-            <section>
+            <section id="conditionals">
                 <h3>The if statement</h3>
                 <p>Use if to decide which lines of code to execute, based on a condition.</p>
 <pre><code>if (condition) {
@@ -785,7 +778,7 @@ if (bananas &gt;=2 &amp;&amp; bananas &lt;7) {
             </section>
 
 
-              <section>
+              <section id="arrays">
                 <h3>Arrays</h3>
                 <p>Arrays are ordered lists of values.</p>
 <pre><code>var arrayName = [element0, element1, ...];
@@ -852,7 +845,7 @@ document.getElementById('foods').innerHTML = myFaveFoods;
 </code></pre>            
             </section>
 
-            <section>
+            <section id="loops">
                 <h3>While loops</h3>
                 <p>While will repeat the same code over and over until some condition is met.</p>
 <pre><code>var bottlesOfBeer = 99;
