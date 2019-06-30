@@ -1,12 +1,10 @@
-# Girl Develop It - JS101: JavaScript for Beginners
+# Intro to JavaScript
 
 In this README:
 
 * [Course Outline](#class-1)
 * [For Students](#for-students)
 * [For Teachers](#for-teachers)
-
-This is the Girl Develop It Intro JavaScript course. Content is based on original material by Sara Chipps, Pamela Fox, Alexis Goldstein, Izzy Johnston, Leo Newball, and Sylvia Richardson.
 
 The course is taught in 2 days. Each day's class is 4-hours long. Each of the slides and practice files are customizable according to the needs of a given class or audience.
 
@@ -32,10 +30,6 @@ Introduces events, listening functions, form inputs, and basic animations.
 
 ## For Students
 
-### Want to take this class? 
-
-Check out [GDI Philly's Meetup calendar](http://www.meetup.com/Girl-Develop-It-Philadelphia/) to see when we are next teaching this class.
-
 ### Course description
 
 JavaScript is the world's most popular programming language for a reason -- it's the primary way to build interaction on the web. Learning JavaScript is a logical next step once you've learned HTML/CSS.
@@ -47,7 +41,7 @@ In this class, we will be covering: basic development concepts, JavaScript, dyna
 ### Prerequisites:
 
 You should have:
-(a) taken Intro to HTML/CSS through Girl Develop It, or
+(a) taken Intro to HTML/CSS, or
 (b) have a working knowledge of HTML
 
 This course is specifically for beginners and we advise experienced developers to not take this class.
@@ -60,22 +54,22 @@ This course is specifically for beginners and we advise experienced developers t
 
 ### Have a question?
 
-Feedback, fixes and suggestions are welcome! Please [post an issue](https://github.com/cfarm/gdi-intro-js/issues) or email cat@cfarman.com.
+Feedback, fixes and suggestions are welcome! Please [post an issue](https://github.com/cfarm/intro-to-javascript/issues) or email cat@cfarman.com.
 
 ## For Teachers
 
 ### Contributing    
 
-Feedback, fixes and suggestions are welcome! Please [post an issue](https://github.com/cfarm/gdi-intro-js/issues) or submit a pull request with any changes.
+Feedback, fixes and suggestions are welcome! Please [post an issue](https://github.com/cfarm/intro-to-javascript/issues) or submit a pull request with any changes.
 
 ### Theme customization
 
 You can change theme colors by changing the theme css to any of the following options:
 ```html
-  <link rel="stylesheet" href="css/theme/gdidefault.css" id="theme">
-  <link rel="stylesheet" href="css/theme/gdilight.css" id="theme">
-  <link rel="stylesheet" href="css/theme/gdisunny.css" id="theme">
-  <link rel="stylesheet" href="css/theme/gdicool.css" id="theme">
+  <link rel="stylesheet" href="css/theme/default.css" id="theme">
+  <link rel="stylesheet" href="css/theme/light.css" id="theme">
+  <link rel="stylesheet" href="css/theme/sunny.css" id="theme">
+  <link rel="stylesheet" href="css/theme/cool.css" id="theme">
 ```
 You can change the text editor theme by changing the highlight.js css to the following options:
 ```html
