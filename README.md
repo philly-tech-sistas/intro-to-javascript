@@ -54,13 +54,13 @@ This course is specifically for beginners and we advise experienced developers t
 
 ### Have a question?
 
-Feedback, fixes and suggestions are welcome! Please [post an issue](https://github.com/cfarm/intro-to-javascript/issues) or email cat@cfarman.com.
+Feedback, fixes and suggestions are welcome! Please [post an issue](https://github.com/philly-tech-sistas/intro-to-javascript/issues).
 
 ## For Teachers
 
 ### Contributing    
 
-Feedback, fixes and suggestions are welcome! Please [post an issue](https://github.com/cfarm/intro-to-javascript/issues) or submit a pull request with any changes.
+Feedback, fixes and suggestions are welcome! Please [post an issue](https://github.com/philly-tech-sistas/intro-to-javascript/issues) or submit a pull request with any changes.
 
 ### Theme customization
 
