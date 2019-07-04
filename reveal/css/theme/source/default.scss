@@ -4,7 +4,7 @@
 // ---------------------------------------------
 
 // Override theme settings (see ../template/settings.scss)
-$linkColor: #01A9B4;
+$linkColor: #718CFF;
 // Background generator
 @mixin bodyBackground() {
 	@include radial-gradient( rgba(28,30,32,1), rgba(85,90,95,1) );

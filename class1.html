@@ -36,8 +36,7 @@
 		<!-- Any section element inside of this container is displayed as a slide -->
 		<div class="slides">
         <!-- Opening slide -->
-            <section>
-                <img src="#" alt="" style="max-width: 300px;">
+            <section id="title">
                 <h3>JavaScript for Beginners</h3>
                 <h4>Class 1</h4>
                 <p><a href="js101-downloads.zip">Download class files</a></p>
@@ -90,6 +89,7 @@
                         <ul>
                             <li><a href="https://www.google.com/">Google</a></li>
                             <li><a href="http://www.consumerfinance.gov/owning-a-home/explore-rates/">Explore interest rates</a></li>
+                            <li><a href="https://codepen.io/swetankrathi/pen/OyRZxL">Photo carousel</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -104,11 +104,10 @@
                 <h3>What is JavaScript?</h3>
                 <ul>
                     <li>JavaScript is standardized by the <a href="https://tc39.github.io/ecma262/">"ECMAScript" specifications</a>.</li>
-                    <li>With JavaScript, you can write code once and use it everywhere. Pro tip: you want DRY code (<a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself">Don't Repeat Yourself</a>).</li>
                 </ul>
             </section>
             <section>
-                <h3>Let's Develop It</h3>
+                <h3>Exercise</h3>
                 <p>Let's write your first JavaScript program. Open your js101-downloads folder and find the <code>practice.html</code> file. Place this code inside, before the closing body tag:</p>
 <pre><code>&lt;script&gt;
     alert('Hello World!');
@@ -135,8 +134,8 @@
                 <h3>JavaScript statements</h3>
                 <p>After each individual statement, you must add a semicolon.</p>
 <pre><code>&lt;script&gt;
-    console.log('Hello World!');
-    console.log('I am glad to meet you');
+    document.getElementById('headline').innerHTML('Hello World!');
+    document.write('I am glad to meet you');
     console.log('I am fuzzy');
 &lt;/script&gt;
 </code></pre>
@@ -158,7 +157,7 @@
 </ul>
             </section>
             <section>
-                <h3>Getting results onto your screen</h3>
+                <h3>Javascript can modify your webpage</h3>
                 <p>Open a popup box.</p>
 <pre><code>alert('Hello World!');
 </code></pre>
@@ -171,7 +170,7 @@ document.getElementById('headline').innerHTML = 'Hello World!';
 </code></pre>
             </section>
             <section>
-                <h3>Let's Develop It</h3>
+                <h3>Exercise</h3>
                 <ul>
                     <li>Open practice.html. Add a comment to the code.</li>
                     <li>Try different ways of printing your message.</li>
@@ -220,6 +219,16 @@ var numberOfKittens = [0, 10, 15, 2]; // a list of numbers
                     <li>Variable names need to start with a letter, $, or _.</li>
                     <li>Variable names can only be made of letters, numbers, $, or _.</li>
                 </ul>
+            </section>
+            <section>
+				<h3>Naming Variables</h3>
+                <ul>
+                    <li>Javascript variables are written in <strong>camelCase</strong></li>
+                    <br>
+                    <p>thisIsCamelCase</p>
+                    <p>onlyTheFirstWordBeginsLowerCased</p>
+                    <p>camelCaseHelpsCodeReadability</p>
+                </ul>
 			</section>
             <section>
 				<h3>Using a Variable</h3>
@@ -229,7 +238,7 @@ console.log(numberOfKittens);
 </code></pre>
 			</section>
             <section>
-				<h3>Let's Develop It</h3>
+				<h3>Exercise</h3>
                 <p>In your JS file, create a variable and give it a valid name and a value. Then, display the value.</p>
 <pre><code>var numberOfKittens = 5;
 console.log(numberOfKittens);
@@ -302,7 +311,7 @@ var numberOfAnimals = numberOfKittens + numberOfPuppies;
                 </table>
 			</section>
             <section>
-				<h3>Let's Develop It</h3>
+				<h3>Exercise</h3>
                 <p>Create two variables and try some arithmetic operators. Don't forget to display your results!</p>
 <pre><code>var numberOfKittens = 5;
 var numberOfPuppies = 4;
@@ -339,12 +348,12 @@ console.log(kittensName); //Outputs 'Admiral Snuggles'
             </section>
 
             <section>
-				<h3>Let's Develop It</h3>
+				<h3>Exercise</h3>
                 <p>Create two variables, a first name and a last name, and then put them together to make a full name. Don't forget to display your results!</p>
 			</section>
 
             <section>
-                <h3>Let's Develop It: The Fortune Teller</h3>
+                <h3>Exercise: The Fortune Teller</h3>
 
 <figure style="float: right;">
 <a title="By No machine-readable author provided. Paulblais86 assumed (based on copyright claims). [Public domain], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Cootie_catcher.jpg"><img width="200" alt="Cootie catcher" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Cootie_catcher.jpg/512px-Cootie_catcher.jpg"></a></figure>
@@ -357,12 +366,22 @@ console.log(kittensName); //Outputs 'Admiral Snuggles'
 <li>Output your fortune to the screen like so: "You will be a _job_ living in a _home_ in _city or place_. For fun you will _hobby_."</li>
 </ul>
 <br>
-<p class="left-align"><span class="blue">Need help?</span> <a href="https://github.com/cfarm/intro-to-javascript/blob/gh-pages/solutions/fortune-teller.js">See one possible solution on Github.</a></p>
+<p class="left-align"><span class="blue">Need help?</span> <a href="https://github.com/philly-tech-sistas/intro-to-javascript/blob/gh-pages/solutions/fortune-teller.js">See one possible solution on Github.</a></p>
             </section>
-
+<section id="summary">
+    <h3>What We've Learned So Far</h3>
+    <ul class="left-align">
+        <li>How to include Javascript in a webpage</li>
+        <li>console vs. document</li>
+        <li>Declaring variables</li>
+        <li>camelCase variable names</li>
+        <li>Data types</li>
+        <li>Strings</li>
+    </ul>
+</section>
             <section id="functions">
                 <h3>Functions</h3>
-                <p>Functions are separable, reusable pieces of code. 
+                <p>Functions are reusable, immutable pieces of code. 
     
             </section>
             <section>
@@ -380,7 +399,7 @@ turtleFact();
             </section>
             
             <section>
-				<h3>Let's Develop It</h3>
+				<h3>Exercise</h3>
                 <p>Turn the code you wrote to output someone's full name into a function, then use it to output the name to the <code>practice.html</code> page.</p>
 <pre><code>function sayMyName() {
   var firstName = 'Kelly ';
@@ -407,7 +426,7 @@ callKitten('Pumpkin'); //outputs 'Come here, Pumpkin!'
             </section>
 
             <section>
-                <h3>Let's Develop It</h3>
+                <h3>Exercise</h3>
                 <p>Update your full name function to take multiple arguments as inputs, so that it outputs different names to the page depending on how you call it:</p>
 <pre><code>sayMyName('Destiny\'s', 'Child'); // should output "Destiny's Child"
 sayMyName('Kelly', 'Rowland'); // should output "Kelly Rowland"
@@ -465,7 +484,7 @@ var squareOfFive = square(5); // will make squareOfFive equal 25.
             </section>
 
             <section>
-				<h3>Let's Develop It</h3>
+				<h3>Exercise</h3>
                 <p>Add a return statement to your name function. Use that function to set the value of a variable.</p>
 <pre><code>function sayMyName(first, last) {
     // this also adds a space between the 2 arguments
@@ -481,43 +500,43 @@ document.getElementById('headline').innerHTML = name2;
 
 
             <section>
-                <h3>Let's Develop It: The Calculator</a></h3>
+                <h3>Exercise: The Calculator</a></h3>
                 <h4>Part 1 of 4</h4>
 
                 <p class="left-align">Write a function called <code>squareNumber</code> that will take one argument (a number), square that number, and return the result. It should also log a string like "The result of squaring the number 3 is 9."</p>
 
 
-                <p class="left-align"><a href="https://github.com/cfarm/intro-to-javascript/blob/gh-pages/solutions/calculator-squareNumber.js">See one possible solution on Github.</a>
+                <p class="left-align"><a href="https://github.com/philly-tech-sistas/intro-to-javascript/blob/gh-pages/solutions/calculator-squareNumber.js">See one possible solution on Github.</a>
             </section>
 
             <section>
-                <h3>Let's Develop It: The Calculator</a></h3>
+                <h3>Exercise: The Calculator</a></h3>
                 <h4>Part 2 of 4</h4>
                 <p class="left-align">Write a function called <code>halfNumber</code> that will take one argument (a number), divide it by 2, and return the result. It should also log a string like "Half of  5 is 2.5.".</p>
 
-                <p class="left-align"><a href="https://github.com/cfarm/intro-to-javascript/blob/gh-pages/solutions/calculator-halfNumber.js">See one possible solution on Github.</a>
+                <p class="left-align"><a href="https://github.com/philly-tech-sistas/intro-to-javascript/blob/gh-pages/solutions/calculator-halfNumber.js">See one possible solution on Github.</a>
 
             </section>
 
             <section>
-                <h3>Let's Develop It: The Calculator</a></h3>
+                <h3>Exercise: The Calculator</a></h3>
                 <h4>Part 3 of 4</h4>
 
                 <p class="left-align">Write a function called <code>percentOf</code> that will take two numbers, figure out what percent the first number represents of the second number, and return the result. It should also log a string like "2 is 50% of 4."</p>
 
-                <p class="left-align"><a href="https://github.com/cfarm/intro-to-javascript/blob/gh-pages/solutions/calculator-percentOf.js">See one possible solution on Github.</a>
+                <p class="left-align"><a href="https://github.com/philly-tech-sistas/intro-to-javascript/blob/gh-pages/solutions/calculator-percentOf.js">See one possible solution on Github.</a>
 
             </section>
 
             <section>
-                <h3>Let's Develop It: The Calculator</a></h3>
+                <h3>Exercise: The Calculator</a></h3>
                 <h4>Part 4 of 4</h4>
                 <p class="left-align">
                   Write a function called <code>areaOfCircle</code> that will take one argument (the radius), calculate the area based on that, and return the result. It should also log a string like "The area for a circle with radius 2 is 12.566370614359172."
                     <ul><li>Bonus: Round the result so there are only two digits after the decimal.</li></ul>
                 </p>
 
-                <p class="left-align"><a href="https://github.com/cfarm/intro-to-javascript/blob/gh-pages/solutions/calculator-areaOfCircle.js">See one possible solution on Github.</a>
+                <p class="left-align"><a href="https://github.com/philly-tech-sistas/intro-to-javascript/blob/gh-pages/solutions/calculator-areaOfCircle.js">See one possible solution on Github.</a>
 
 
             </section>
@@ -529,17 +548,17 @@ document.getElementById('headline').innerHTML = name2;
 
             <section>
                 <h3>Review</h3>
-                <p>In this code, spot the comments, variables, operator, function, argument, and return value.</p>
-<pre><code>function calculateTip(total) {
-    var tipPercent = 0.15; //Can be changed
-    return (total * tipPercent);
-}
-
-var billPreTip = 10;
-var billTip   = calculateTip(billPreTip);
-var receipt   = 'Meal: ' + billPreTip + ' Tip: ' + billTip + 
-    ' Total: ' + (billPreTip + billTip);
-console.log(receipt); 
+                <p>Shout out the line numbers! Spot the comments, variables, operator, function, argument, and return value.</p>
+<pre><code>1   function calculateTip(total) {
+2       var tipPercent = 0.15; //Can be changed
+3       return (total * tipPercent);
+4   }
+5
+6   var billPreTip = 10;
+7   var billTip   = calculateTip(billPreTip);
+8   var receipt   = 'Meal: ' + billPreTip + ' Tip: ' + billTip + 
+9       ' Total: ' + (billPreTip + billTip);
+10  console.log(receipt); 
 </code></pre>
             </section>
     
@@ -575,7 +594,7 @@ console.log (awesomeGroup + ' is pretty awesome.'); //Won't work
                 <h3>Boolean Variables</h3>
                 <p>Boolean variables represent the logical values True and False</p>
 <pre><code>var catsAreBest = true;
-var dogsRule = false;
+var turtlesAreSquare = false;
         </code></pre>            
             </section>
 
@@ -664,17 +683,18 @@ if (bananas &gt; 0) {
 
             <section>
                 <h3>Strict and loose equality</h3>
-
-
+                <p>== vs. ===</p>
             </section>
 
             <section>
                 <h3>Watch out!</h3>
-                <p>Don't mix up = and ==</p>
+                <p>Don't mix up = and == either</p>
             </section>
             <section>
-        <h3>Let's Develop It</h3>
-                <p>Make a variable called "temperature." Write some code that tells you to put on a coat if it is below 50 degrees.</p> 
+        <h3>Exercise</h3>
+                <p>Make a variable called "temperature." Write a program that tells you to put on a coat if it is below 50 degrees.</p>
+                <br>
+                <span class="blue">Hint:</span> We just learned functions, if statements, and comparison operators</li>
       </section>
 
             <section>
@@ -706,7 +726,7 @@ if (age &gt;= 35) {
         </code></pre>
             </section>
              <section>
-        <h3>Let's Develop It</h3>
+        <h3>Exercise</h3>
                 <p>Modify your "wear a coat" code for these conditions:</p>
                 <ol>
                     <li>If it is less than 50 degrees, wear a coat.</li>
@@ -756,7 +776,7 @@ if (bananas &gt;=2 &amp;&amp; bananas &lt;7) {
         </code></pre>
             </section>
             <section>
-        <h3>Let's Develop It</h3>
+        <h3>Exercise</h3>
                 <p>Add a logical operator to your what to wear program.</p>
 
 <pre><code>if (temperature > 60 && temperature < 70) {
@@ -771,8 +791,8 @@ if (bananas &gt;=2 &amp;&amp; bananas &lt;7) {
       </section>
 
             <section>
-                <h3>Let's Develop It</h3>
-                <p><a href="https://cfarm.github.io/intro-to-javascript/puzzles.html#bigger">JavaScript Puzzle: What number is bigger?</a></p>
+                <h3>Exercise</h3>
+                <p><a href="https://philly-tech-sistas.github.io/intro-to-javascript/puzzles.html#biggerr">JavaScript Puzzle: What number is bigger?</a></p>
             </section>
 
 
@@ -808,7 +828,7 @@ var lastColor = rainbowColors[6];
             </section>
             
             <section>
-                <h3>Let's Develop It</h3>
+                <h3>Exercise</h3>
                 <p>Create an array of your favorite foods. Display a few values on your screen.</p> 
 <pre><code>var myFaveFoods = ['chocolate', 'pickles', 'avocados'];
 console.log(myFaveFoods[0]);
@@ -834,7 +854,7 @@ myFavoriteThings.push('Dancing');
             </section>
             
             <section>
-            <h3>Let's Develop It</h3>
+            <h3>Exercise</h3>
             <p>Change the first and last items in your favorite foods array using bracket notation, and add new items using the "push" function. Then display your new values on the page.</p>
 <pre><code>var myFaveFoods = ['chocolate', 'pickles', 'avocados', 'tofu scramble', 'pancakes', 'donuts'];
 myFaveFoods[0] = 'chocolate cake to be more specfic';
@@ -877,7 +897,7 @@ for (var i = 0; i &lt; rainbowColors.length; i++) {
                 </code></pre>
             </section>
             <section>
-        <h3>Let's Develop It</h3>
+        <h3>Exercise</h3>
         <p>Use a loop to make a list of all your favorite foods. For now, use <code>console.log</code> to view the list.</p> 
 <pre><code>var myFaveFoods = ['pancakes', 'avocados', 'donuts'];
 for (var i = 0; i &lt; myFaveFoods.length; i++) {
@@ -886,7 +906,7 @@ for (var i = 0; i &lt; myFaveFoods.length; i++) {
       </section>            
 
 <section>
-        <h3>Let's Develop It</h3>
+        <h3>Exercise</h3>
         <p>Now update your loop so it can output the list of foods on your HTML page.</p> 
   
 <pre><code>var foodString = '';
@@ -948,15 +968,15 @@ for (var i = 1; i &lt;= 100; i++) {
             </section>
 
             <section>
-    <h3>Let's Develop It</h3>
+    <h3>Exercise</h3>
     <p>
-    <a href="https://cfarm.github.io/intro-to-javascript/puzzles.html#evenodd">JavaScript Puzzle: Even/Odd Counter</a>
+    <a href="https://philly-tech-sistas.github.io/intro-to-javascript/puzzles.html#evenodd">JavaScript Puzzle: Even/Odd Counter</a>
     </p>        
                 
             </section>
                   
             <section>
-        <h3>Let's Develop It</h3>
+        <h3>Exercise</h3>
                 <p>Write a loop that gives you the 9's times table,<br /> from 9 x 1 = 9 to 9 x 12 = 108.</p>
                 <p>Finish early? Try using a loop inside a loop to write all the times tables, from 1 to 12.</p>
       </section>
@@ -971,7 +991,7 @@ for (var i = 1; i &lt;= 100; i++) {
 			</section>
 
           <!--   <section>
-        <h3>Let's Develop It</h3>
+        <h3>Exercise</h3>
         <p><a href="http://goo.gl/forms/GuDEHhXEA1KaLGGO2">Class 1 Feedback Survey!!!!<br>
         http://goo.gl/forms/GuDEHhXEA1KaLGGO2</a></p>
                 
