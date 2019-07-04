@@ -90,6 +90,7 @@
                         <ul>
                             <li><a href="https://www.google.com/">Google</a></li>
                             <li><a href="http://www.consumerfinance.gov/owning-a-home/explore-rates/">Explore interest rates</a></li>
+                            <li><a href="https://codepen.io/swetankrathi/pen/OyRZxL">Photo carousel</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -104,7 +105,6 @@
                 <h3>What is JavaScript?</h3>
                 <ul>
                     <li>JavaScript is standardized by the <a href="https://tc39.github.io/ecma262/">"ECMAScript" specifications</a>.</li>
-                    <li>With JavaScript, you can write code once and use it everywhere. Pro tip: you want DRY code (<a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself">Don't Repeat Yourself</a>).</li>
                 </ul>
             </section>
             <section>
@@ -219,6 +219,16 @@ var numberOfKittens = [0, 10, 15, 2]; // a list of numbers
                     <li>A new variable needs to have a unique name.</li>
                     <li>Variable names need to start with a letter, $, or _.</li>
                     <li>Variable names can only be made of letters, numbers, $, or _.</li>
+                </ul>
+            </section>
+            <section>
+				<h3>Naming Variables</h3>
+                <ul>
+                    <li>Javascript variables are written in <strong>camelCase</strong></li>
+                    <br>
+                    <p>thisIsCamelCase</p>
+                    <p>onlyTheFirstWordBeginsLowerCased</p>
+                    <p>camelCaseHelpsCodeReadability</p>
                 </ul>
 			</section>
             <section>
@@ -359,7 +369,17 @@ console.log(kittensName); //Outputs 'Admiral Snuggles'
 <br>
 <p class="left-align"><span class="blue">Need help?</span> <a href="https://github.com/cfarm/intro-to-javascript/blob/gh-pages/solutions/fortune-teller.js">See one possible solution on Github.</a></p>
             </section>
-
+<section id="summary">
+    <h3>What We've Learned So Far</h3>
+    <ul class="left-align">
+        <li>How to include Javascript in a webpage</li>
+        <li>console vs. document</li>
+        <li>Declaring variables</li>
+        <li>camelCase variable names</li>
+        <li>Data types</li>
+        <li>Strings</li>
+    </ul>
+</section>
             <section id="functions">
                 <h3>Functions</h3>
                 <p>Functions are reusable, immutable pieces of code. 
@@ -530,9 +550,9 @@ document.getElementById('headline').innerHTML = name2;
             <section>
                 <h3>Review</h3>
                 <p>Shout out the line numbers! Spot the comments, variables, operator, function, argument, and return value.</p>
-<pre><code>1    function calculateTip(total) {
-    2   var tipPercent = 0.15; //Can be changed
-    3   return (total * tipPercent);
+<pre><code>1   function calculateTip(total) {
+2       var tipPercent = 0.15; //Can be changed
+3       return (total * tipPercent);
 4   }
 5
 6   var billPreTip = 10;
