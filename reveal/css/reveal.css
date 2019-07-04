@@ -77,9 +77,6 @@ body {
     z-index: 10; 
     font-size: 35%;
     text-align:right;
-    background-image: url(../css/images/pink-logo.png);
-    background-repeat: no-repeat;
-    background-size: auto 100%;
     font-family:;
 }
 .reveal footer .copyright{
@@ -104,7 +101,7 @@ body {
 .left{float:left}
 .right{float:right}
 .clear{clear:both}
-.blue{color:#01A9B4 }
+.blue{color:#718CFF }
 .green{color:#92BB44}
 .yellow{color:#EDAB23}
 .pink{color:#F05B62}
@@ -1221,4 +1218,8 @@ body {
 	visibility: hidden;
 }
 
-
+#title {
+	display: flex!important;
+	flex-direction: column;
+	justify-content: center;
+}
