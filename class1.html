@@ -58,14 +58,7 @@
             <section>
               <h3>Welcome!</h3>
               <div class = "left-align">
-              <p>Philly Tech Sistas is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
-              <p class ="green">Some "rules"</p>
-              <ul>
-                <li>We are here for you!</li>
-                <li>Every question is important.</li>
-                <li>Help each other.</li>
-                <li>Have fun.</li>
-              </ul>
+              <p>Add intro slide(s) content here </p>
               </div>
             </section>
             
@@ -180,7 +173,7 @@ document.getElementById('headline').innerHTML = 'Hello World!';
                 </ul>
             </section>
        
-            <section id="Variables">
+            <section id="variables">
 				<h3>Variables</h3>
                 <ul>
                     <li>A variable is a place to store values.</li>
@@ -594,7 +587,7 @@ console.log (awesomeGroup + ' is pretty awesome.'); //Won't work
                 <h3>Boolean Variables</h3>
                 <p>Boolean variables represent the logical values True and False</p>
 <pre><code>var catsAreBest = true;
-var turtlesAreSquare = false;
+var optionIsChecked = true; // real-world example
         </code></pre>            
             </section>
 
@@ -606,8 +599,9 @@ var turtlesAreSquare = false;
 }
         </code></pre>
 <pre><code>var bananas = 5;
+var headline = document.getElementById('headline');
 if (bananas &gt; 0) {
-  console.log ('You have some bananas!');
+  headline.innerHTML = 'You have some bananas';
 }
         </code></pre>
             </section>
@@ -623,44 +617,44 @@ if (bananas &gt; 0) {
                     </thead>
                     <tbody>
                       <tr>
-                       <td>a == b</td>
+                       <td><code>a == b</code></td>
                        <td>Equal</td>
                        <td><strong><code>TRUE</code></strong> if a is equal to b (can be different types).</td>
                       </tr>
                       <tr>
-                       <td>a === b</td>
+                       <td><code>a === b</code></td>
                        <td>Identical</td>
                        <td>
                         <strong><code>TRUE</code></strong> if a is equal to b, and the same type. </td>
                       </tr>
                       <tr>
-                       <td>a != b</td>
+                       <td><code>a != b</code></td>
                        <td>Not equal</td>
                        <td><strong><code>TRUE</code></strong> if a is not equal to b (can be different types).</td>
                       </tr>
                       <tr>
-                       <td>a !== b</td>
+                       <td><code>a !== b</code></td>
                        <td>Not identical</td>
                        <td>
                         <strong><code>TRUE</code></strong> if a is not equal to b, or they are not the same type.</td>
                       </tr>
                       <tr>
-                       <td>a &lt; b</td>
+                       <td><code>a &lt; b</code></td>
                        <td>Less than</td>
                        <td><strong><code>TRUE</code></strong> if a is strictly less than b.</td>
                       </tr>
                       <tr>
-                       <td>a &gt; b</td>
+                       <td><code>a &gt; b</code></td>
                        <td>Greater than</td>
                        <td><strong><code>TRUE</code></strong> if a is strictly greater than b.</td>
                       </tr>
                       <tr>
-                       <td>a &lt;= b</td>
+                       <td><code>a &lt;= b</code></td>
                        <td>Less than or equal to </td>
                        <td><strong><code>TRUE</code></strong> if a is less than or equal to b.</td>
                       </tr>
                       <tr>
-                       <td>a &gt;= b</td>
+                       <td><code>a &gt;= b</code></td>
                        <td>Greater than or equal to </td>
                        <td><strong><code>TRUE</code></strong> if a is greater than or equal to b.</td>
                       </tr>
@@ -683,18 +677,25 @@ if (bananas &gt; 0) {
 
             <section>
                 <h3>Strict and loose equality</h3>
-                <p>== vs. ===</p>
+                <p><code>==</code> vs. <code>===</code></p>
             </section>
 
             <section>
                 <h3>Watch out!</h3>
-                <p>Don't mix up = and == either</p>
+                <p>Don't mix up <code>=</code> and <code>==</code> either</p>
             </section>
             <section>
         <h3>Exercise</h3>
-                <p>Make a variable called "temperature." Write a program that tells you to put on a coat if it is below 50 degrees.</p>
-                <br>
-                <span class="blue">Hint:</span> We just learned functions, if statements, and comparison operators</li>
+            <ol>
+                <li>Make a variable that you can use to update the page heading.</li>
+<pre><code>var headline = document.getElementById('headline');
+headline.innerHTML = 'Our messages go here';
+</code></pre>
+                <li>Make a variable called "temperature." Write a program that tells you to put on a coat if it is below 50 degrees.</li>
+            </ol>
+            <br>
+            <br>
+                <span class="blue">Hint:</span> We just learned functions, if statements, and comparison operators- use them all!</li>
       </section>
 
             <section>
@@ -702,26 +703,25 @@ if (bananas &gt; 0) {
                 <p>Use else to provide an alternate set of instructions.</p>
 <pre><code>var age = 28;
 if (age &gt;= 16) {
-    console.log ('Yay, you can drive!');
+    headline.innerHTML = 'Yay, you can drive!'
 } else {
-    console.log ('Sorry, but you have ' + (16 - age) + 
-    ' years until you can drive.');
-}
-        </code></pre>
+    headline.innerHTML = 'Sorry, but you have ' + (16 - age) + 
+    ' years until you can drive.';
+}</code></pre>
             </section>
             <section>
                 <h3>The if/else if/else statement</h3>
                 <p>If you have multiple conditions, you can use else if.</p>
 <pre><code>var age = 20;
 if (age &gt;= 35) {
-    console.log('You can vote AND hold any place in government!');
+    headline.innerHTML = 'You can vote AND hold any place in government!';
 } else if (age &gt;= 25) {
-    console.log('You can vote AND run for the Senate!');
+    headline.innerHTML = 'You can vote AND run for the Senate!';
 } else if (age &gt;= 18) {
-    console.log('You can vote!');
+    headline.innerHTML = 'You can vote!';
 } else {
-    console.log('You can\'t vote, but you can 
-    still write your representatives.');
+    headline.innerHTML = 'You can\'t vote, but you can 
+    still write your representatives.';
 }
         </code></pre>
             </section>
@@ -769,9 +769,9 @@ if (age &gt;= 35) {
                 <p>You can use these operators to combine conditions.</p>
 <pre><code>var bananas = 5;
 if (bananas &gt;=2 &amp;&amp; bananas &lt;7) {
-    console.log('You have a reasonable number of bananas');
+    headline.innerHTML = 'You have a reasonable number of bananas';
 } else {
-    console.log('Check your banana supply');
+    headline.innerHTML = 'Check your banana supply';
 }
         </code></pre>
             </section>
@@ -779,12 +779,11 @@ if (bananas &gt;=2 &amp;&amp; bananas &lt;7) {
         <h3>Exercise</h3>
                 <p>Add a logical operator to your what to wear program.</p>
 
-<pre><code>if (temperature > 60 && temperature < 70) {
-    document.getElementById('welcome-message').innerHTML = 
-        'the weather is lovely, wear whatever you like';
+<pre><code>var message = document.getElementById('welcome-message');
+  if (temperature > 60 && temperature < 70) {
+    message.innerHTML = 'the weather is lovely, wear whatever you like';
 } else if (temperature > 100 || temperature < 0) {
-   document.getElementById('welcome-message').innerHTML = 
-        'stay inside, the weather is awful'; 
+   message.innerHTML = 'stay inside, the weather is awful'; 
 }
 </code></pre>
 
@@ -792,7 +791,7 @@ if (bananas &gt;=2 &amp;&amp; bananas &lt;7) {
 
             <section>
                 <h3>Exercise</h3>
-                <p><a href="https://philly-tech-sistas.github.io/intro-to-javascript/puzzles.html#bigger">JavaScript Puzzle: What number is bigger?</a></p>
+                <p><a href="https://philly-tech-sistas.github.io/intro-to-javascript/puzzles.html#bigger" target="_blank">JavaScript Puzzle: What number is bigger?</a></p>
             </section>
 
 
@@ -831,9 +830,9 @@ var lastColor = rainbowColors[6];
                 <h3>Exercise</h3>
                 <p>Create an array of your favorite foods. Display a few values on your screen.</p> 
 <pre><code>var myFaveFoods = ['chocolate', 'pickles', 'avocados'];
-console.log(myFaveFoods[0]);
-console.log(myFaveFoods[1]);
-console.log(myFaveFoods[2]);
+headline.innerHTML = myFaveFoods[0];
+headline.innerHTML = myFaveFoods[1];
+headline.innerHTML = myFaveFoods[2];
         </code></pre> 
             </section>
 
@@ -916,7 +915,7 @@ for (var i = 0; i < myFaveFoods.length; i++) {
 document.getElementById('foods').innerHTML = foodString;
 </code></pre>
 
-<p>Alternate solutions..</p>
+<p class="blue">Bonus:</p>
 <ul>
 <li>Save `myFaveFoods[i]` as a variable to make it reusable for outputting in different ways.</li>
     <li>Make each food an <code>li</code> element inside an unordered list (<code>ul</code>).</li>
