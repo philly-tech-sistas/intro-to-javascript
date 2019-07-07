@@ -830,9 +830,9 @@ var lastColor = rainbowColors[6];
                 <h3>Exercise</h3>
                 <p>Create an array of your favorite foods. Display a few values on your screen.</p> 
 <pre><code>var myFaveFoods = ['chocolate', 'pickles', 'avocados'];
-console.log(myFaveFoods[0]);
-console.log(myFaveFoods[1]);
-console.log(myFaveFoods[2]);
+headline.innerHTML = myFaveFoods[0];
+headline.innerHTML = myFaveFoods[1];
+headline.innerHTML = myFaveFoods[2];
         </code></pre> 
             </section>
 
@@ -915,7 +915,7 @@ for (var i = 0; i < myFaveFoods.length; i++) {
 document.getElementById('foods').innerHTML = foodString;
 </code></pre>
 
-<p>Alternate solutions..</p>
+<p class="blue">Bonus:</p>
 <ul>
 <li>Save `myFaveFoods[i]` as a variable to make it reusable for outputting in different ways.</li>
     <li>Make each food an <code>li</code> element inside an unordered list (<code>ul</code>).</li>
