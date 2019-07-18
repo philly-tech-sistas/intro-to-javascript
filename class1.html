@@ -54,14 +54,6 @@
                     <li><a href="#/loops">Loops</a></li>
                 </ul>
             </section>
-        
-            <section>
-              <h3>Welcome!</h3>
-              <div class = "left-align">
-              <p>Add intro slide(s) content here </p>
-              </div>
-            </section>
-            
             <section>
               <h3>Welcome!</h3>
               <div class = "left-align">
@@ -99,6 +91,15 @@
                     <li>JavaScript is standardized by the <a href="https://tc39.github.io/ecma262/">"ECMAScript" specifications</a>.</li>
                 </ul>
             </section>
+            <section>
+                <h3>Download class materials</h3>
+                <p>All class materials are available on Github at <a href="https://tinyurl.com/pts-js1">https://tinyurl.com/pts-js1</a></p>
+                <img src="images/download-repo.png" alt="The Philly Tech Sistas Intro to Javascript repo"/>
+                <ul>
+                    <li>Bookmark it!</li>
+                    <li>For now, download and unzip the <a href="js101-downloads.zip">js101-downloads folder</a></li>
+                    <li>Open in Sublime</li>
+                </ul></section>
             <section>
                 <h3>Exercise</h3>
                 <p>Let's write your first JavaScript program. Open your js101-downloads folder and find the <code>practice.html</code> file. Place this code inside, before the closing body tag:</p>
@@ -587,7 +588,7 @@ console.log (awesomeGroup + ' is pretty awesome.'); //Won't work
                 <h3>Boolean Variables</h3>
                 <p>Boolean variables represent the logical values True and False</p>
 <pre><code>var catsAreBest = true;
-var optionIsChecked = true; // real-world example
+var optionIsChecked = false; // real-world example
         </code></pre>            
             </section>
 
@@ -673,6 +674,7 @@ if (bananas &gt; 0) {
                     <li>null are considered false</li>
                 </ul>
                 <p>Everything else is "truthy."</p>
+                <p class="left-align"><span class="blue">Tip:</span> Wanna see for yourself? Try it in the browser console.</p>
             </section>
 
             <section>
@@ -767,8 +769,9 @@ if (age &gt;= 35) {
             <section>
                 <h3>Using logical operators</h3>
                 <p>You can use these operators to combine conditions.</p>
-<pre><code>var bananas = 5;
-if (bananas &gt;=2 &amp;&amp; bananas &lt;7) {
+<pre><code>// A simple grocery inventory system
+var bananas = 57;
+if (bananas &gt;=20 &amp;&amp; bananas &lt;200) {
     headline.innerHTML = 'You have a reasonable number of bananas';
 } else {
     headline.innerHTML = 'Check your banana supply';
@@ -783,7 +786,7 @@ if (bananas &gt;=2 &amp;&amp; bananas &lt;7) {
   if (temperature > 60 && temperature < 70) {
     message.innerHTML = 'the weather is lovely, wear whatever you like';
 } else if (temperature > 100 || temperature < 0) {
-   message.innerHTML = 'stay inside, the weather is awful'; 
+   message.innerHTML = 'stay inside, the weather is dangerous';
 }
 </code></pre>
 
@@ -840,7 +843,9 @@ headline.innerHTML = myFaveFoods[2];
                 <h3>Changing arrays</h3>
                 <p>You can use bracket notation to change an item in an array</p>
 <pre><code>var myFavoriteThings = ['Broccoli', 1024, 'Sherlock'];
-myFavoriteThings[0] = 'Asparagus';            
+myFavoriteThings[0] = 'Asparagus';
+
+// result: ['Aparagus', 1024, 'Sherlock'];
                 </code></pre>
             </section>
             
@@ -848,14 +853,16 @@ myFavoriteThings[0] = 'Asparagus';
                 <h3>Expanding arrays</h3>
                 <p>Arrays do not have a fixed length. You can use "push" to add something to an array.</p>
 <pre><code>var myFavoriteThings = ['Broccoli', 1024, 'Sherlock'];
-myFavoriteThings.push('Dancing');           
+myFavoriteThings.push('Dancing');
+
+// result: ['Broccoli', 1024, 'Sherlock', 'Dancing'];
                 </code></pre>
             </section>
             
             <section>
             <h3>Exercise</h3>
             <p>Change the first and last items in your favorite foods array using bracket notation, and add new items using the "push" function. Then display your new values on the page.</p>
-<pre><code>var myFaveFoods = ['chocolate', 'pickles', 'avocados', 'tofu scramble', 'pancakes', 'donuts'];
+<pre><code>var myFaveFoods = ['chocolate', 'pickles', 'peaches', 'donuts'];
 myFaveFoods[0] = 'chocolate cake to be more specfic';
 myFaveFoods.push('lemons');
 document.getElementById('foods').innerHTML = myFaveFoods;           
